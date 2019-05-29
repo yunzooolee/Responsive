@@ -1,0 +1,4 @@
+@charset "utf-8";
+#container .desc{height:auto !important;}
+#container .main_slide_wrap .main_slide li .txt_wrap .sub_head{font-size:48px;}
+#container .main_slide_wrap .main_slide li .txt_wrap .desc{font-size:25px;}

@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>KINDOH</title>
+	<link href="/images/favicon.ico" rel="shortcut icon">
+	<link href="/images/favicon.png" rel="apple-touch-icon-precomposed">
+	<link rel="stylesheet" href="css/basic.css" />
+	<link rel="stylesheet" href="css/layout.css" />
+	<link rel="stylesheet" href="js/jquery.bxslider.css" />
+	
+	<script type="text/javascript" src="js/jquery-1.11.3.js"></script>
+	<script type="text/javascript" src="js/jquery.bxslider.js"></script>
+	<script type="text/javascript" src="js/ScrollTrigger.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+	<script>
+	/*
+		// 텍스트 카운트
+		window.counter = function() {
+			// this refers to the html element with the data-scroll-showCallback tag
+			var span = this.querySelector('span');
+			var current = parseInt(span.textContent);
+
+			span.textContent = current + 1;
+		};
+	*/
+		// 스크롤 애니메이션 트리거
+		document.addEventListener('DOMContentLoaded', function(){
+		  var trigger = new ScrollTrigger({
+			  addHeight: true
+		  });
+		});
+	</script>
+	<!-- ie9이하 -->
+		<!--[if lt ie 9]>
+			<link rel="stylesheet" href="/css/ie.css" type="text/css" />
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	<!-- //ie9이하 -->
+</head>
+<body>
+	<div id="wrap">
+		<a href="javascript:void(0);" class="btn_gotop"></a>
+		<!-- header -->
+		<div id="header">
+			<div class="clearfix header_wrap">
+				<h1 class="logo left_box"><a href="/"><img src="images/common/img_logo.png" alt="kindoh" /></a></h1>
+				<a href="javascript:void(0);" class="btn_m_menu"><img src="images/common/icon_m_menu.png" alt="" /></a>
+				<ul class="nav_wrap right_box">
+					<li class="first">
+						<a href="javascript:void(0);" class="home on">Home</a>
+					</li>
+					<li>
+						<a href="javascript:void(0);">About Us</a>
+					</li>
+					<li>
+						<a href="javascript:void(0);">Our Mission</a>
+					</li>
+					<li>
+						<a href="javascript:void(0);">Brand</a>
+						<!-- <ul class="pc sub_depth">
+							<li><a href="http://kindohmall.com/goods/catalog?code=00010001&popup=&iframe=">기저귀</a></li>
+							<li><a href="http://kindohmall.com/goods/catalog?code=00010002&popup=&iframe=">물티슈</a></li>
+						</ul> -->
+					</li>
+					<li class="last">
+						<a href="javascript:void(0);">Join Us</a>
+					</li>
+					<!-- <li class="last">
+						<select name="" id="language">
+							<option value="">Language</option>
+							<option value="en">english</option>
+							<option value="de">Deutsch</option>
+							<option value="ko">korean</option>
+						</select>
+					</li> -->
+				</ul>
+			</div>
+		</div><!-- //header -->
+		
+		<!-- content -->
+		<div id="container">
+			<!-- main slide -->
+			<div class="main_slide_wrap scroll">
+				<ul class="main_slide">
+					<li class="first visual01">
+						<img src="images/main/img_main_slide01.jpg" alt="main slide visual01" class="pc" />
+						<img src="images/mobile/main/img_main_slide01.jpg" alt="main slide visual01" class="mobile" />
+						<div class="txt_wrap">
+							<p class="sub_head">
+								Create a life-time <br class="mobile" />comfort zone <br />for you and your baby.
+							</p>
+							<p class="noto desc">
+								We offer the most essential and best <br class="mobile" />products for your happiness.<br class="pc" /> Happiness is <br class="mobile" />your and your baby's smile.
+							</p>
+						</div>
+					</li>
+					<li class="visual02">
+						<img src="images/main/img_main_slide02.jpg" alt="main slide visual02" class="pc" />
+						<img src="images/mobile/main/img_main_slide02.jpg" alt="main slide visual02" class="mobile" />
+						<div class="txt_wrap">
+							<p class="sub_head">
+								Allow your body and <br class="mobile"/>mind <br class="pc" />to breathe freely <br class="mobile"/>in nature.
+							</p>
+							<p class="noto desc">
+								We love nature. It enhances your vitality and <br class="mobile" />brings you <br class="pc" />peace of mind.
+							</p>
+						</div>
+					</li>
+					<li class="last visual03">
+						<img src="images/main/img_main_slide03.jpg" alt="main slide visual03" class="pc" />
+						<img src="images/mobile/main/img_main_slide03.jpg" alt="main slide visual03" class="mobile" />
+						<div class="txt_wrap">
+							<p class="sub_head">
+								Enjoy the fortune of <br class="mobile" />having a new <br class="pc" />definition of <br class="mobile" />a luxurious life with us. 
+								<!-- Enjoy the fortune for <br class="mobile" />having new <br class="pc" />definition of <br class="mobile" />luxurious life with us -->
+							</p>
+							<p class="noto desc">
+								We simply reflect your desire to experience a <br class="mobile" />care-free life with <br class="pc" />premium everyday products.
+							</p>
+						</div>
+					</li>
+				</ul>
+			</div><!-- //main slide -->
+			
+			<!-- about us -->
+			<div class="about_wrap scroll">
+				<div class="symbol_wrap">
+					<div class="head" data-scroll="toggle(.fromTopIn, .fromTopOut) addWidth once">
+						Innovative marketing company.<br class="pc" />
+						Redefines <strong class="txt_kindoh2">“Luxury”</strong> in daily products.<br class="pc" />
+						Gives equal opportunity to the consumers.
+					</div>
+					<p class="symbol_logo" data-scroll="toggle(.fromTopIn, .fromTopOut) addWidth once">
+						<img src="images/main/img_logo_define.png" alt="" class="pc" />
+						<img src="images/mobile/main/img_logo_define.png" alt="" class="mobile" />
+					</p>
+					<p class="noto txt_desc" data-scroll="toggle(.fromTopIn, .fromTopOut) addWidth once">
+						Every mother wants to give the best products to their babies.<br />
+						Even though she can’t afford it, she tries to provide them for their children.<br />
+						We deeply understand this “love” and try to give them an equal opportunity.<br />
+						Through our innovative marketing strategy we changed the conventional<br />
+						market paradigm to our philosophy.​
+					</p>
+				</div>
+			</div><!-- //about us -->
+			
+			<div class="identity_wrap">
+				<ul class="identity_list">
+					<li class="first identity1">
+						<div data-scroll="toggle(.fromTopIn, .fromTopOut) addWidth once">
+							<h2>Premium Quality</h2>
+							<h4>to provide Comfort</h4>
+							<a href="javascript:void(0);" class="btn_acco"></a>
+							<div class="noto desc">
+								In 2016, we found the best diaper in the world and started distributing it to the Korean market.<br />
+								In 2018, we launched our baby wipes which have the best quality in the world.<br />
+								In 2019, we are launching baby cosmetics, female hygiene products, incontinence products<br />
+								and household cleaning products, which are made in Europe and of the best quality.
+							</div>
+						</div>
+					</li>
+					<li class="identity2">
+						<div data-scroll="toggle(.fromTopIn, .fromTopOut) addWidth once">
+							<h2>Innovative Marketing</h2>
+							<h4>to offer a better Price</h4>
+							<a href="javascript:void(0);" class="btn_acco"></a>
+							<div class="noto desc">
+								In 2016, we started sales through our off-line channels first.<br />
+								However, we found so much wrong information which was driven by<br />
+								major brands’ marketing strategies to maximize their company’s profits.<br />
+								We executed our innovative marketing through our know-how and had immense success in the Korean market.<br />
+								We are always trying innovative and advanced marketing / communication strategies<br />
+								to save cost and share the profits with our consumers
+							</div>
+						</div>
+					</li>
+					<li class="last identity3">
+						<div data-scroll="toggle(.fromTopIn, .fromTopOut) addWidth once">
+							<h2>Transparent Process</h2>
+							<h4>to gain deeper Trust</h4>
+							<a href="javascript:void(0);" class="btn_acco"></a>
+							<div class="noto desc">
+								We believe transparency is the most important element to gain the consumer’s trust.<br />
+								We provide all information on the raw materials we use, the manufacturing process, and toxic analyses we conduct.<br />
+								Today, we are partnering with qualified laboratories to analyze all of<br />
+								our current and future products to verify the ingredients’ harmlessness.<br />
+								We don’t offer any products to our consumers that don’t meet those standards.
+							</div>
+						</div>
+					</li>
+				</ul>
+
+				<div class="clearfix infographic_wrap">
+					<div class="left_box" data-scroll="toggle(.fromLeftIn, .fromLeftOut) addWidth once">
+						<h3>“Common Luxury”</h3>
+						<p class="noto desc">
+							We believe true luxury is providing you<br />with comfort that makes you feel<br />sublime and relaxed.
+							<br /><br />
+							By using our products, you feel more<br />comfortable in your daily life.
+							<br /><br />
+							No need to spend a fortune, everyone<br />deserves to have this everyday luxury.
+							<br /><br />
+							Our priority is to share this comfort and<br />offer equal opportunities to you.
+						</p>
+					</div>
+					<div class="right_box" data-scroll="toggle(.fromRightIn, .fromRightOut) addWidth once">
+						<img src="images/main/img_main_visual04.png" alt="" class="pc" />
+						<img src="images/mobile/main/img_main_visual04.png" alt="" class="mobile" />
+					</div>
+				</div>
+			</div>
+			
+			<!-- our mission -->
+			<div class="mission_wrap scroll">
+				<div class="mission_desc_wrap">
+					<div data-scroll="toggle(.fromTopIn, .fromTopOut) addWidth once">
+						<h2>Our Mission</h2>
+						<p class="head">
+							We create new values <br class="mobile" />in life beyond the obvious.
+						</p>
+						<p class="noto desc">
+							We aim to make you feel the comfort in life with the trust from all of our product ranges.<br />
+							Our innovative marketing strategy allows you to use the best-quality products at an affordable price.<br />
+							In this way, we make you enjoy our definition of “common luxury”.<br />
+							<br />
+							Sharing our values and happiness with you is of the utmost importance to us.
+						</p>
+						
+					</div>
+				</div>
+			</div><!-- //our mission -->
+
+			<!-- brand -->
+			<div class="brand_wrap scroll">
+				<div class="symbol_wrap">
+					<h2 data-scroll="toggle(.fromTopIn, .fromTopOut) addWidth once">Our Brand</h2>
+					<p class="noto sub_head" data-scroll="toggle(.fromTopIn, .fromTopOut) addWidth once">
+						We started offering child care products because we understand parents’ love.<br />
+						We expanded  our range to share this love with all family members.
+					</p>
+					
+					<ul class="clearfix symbol_list" data-scroll="toggle(.fromTopIn, .fromTopOut) addWidth once">
+						<li class="first brand1">
+							<img src="images/main/icon_brand01.png" alt="" />
+							<!-- <div class="desc">
+								<span><img src="images/common/icon_dot_r.png" alt="" /></span>
+								<a href="http://www.kindohmall.com/main/index" target="_blank" class="italic txt_kindoh2 bg_bar">Kindoh Mall Korea</a>
+							</div> -->
+						</li>
+						<li class="brand2">
+							<img src="images/main/icon_brand02.png" alt="" />
+							<div class="desc">
+								<span><img src="images/common/icon_dot_b.png" alt="" /></span>
+								<p>Launching</p>
+								<p class="txt_kindoh2">
+									New  Brand<br />
+									for<br />
+									Baby Cosmetic Products
+								</p>
+								<p class="bg_bar">in 2019</p>
+							</div>
+						</li>
+						<li class="brand3">
+							<img src="images/main/icon_brand03.png" alt="" />
+							<div class="desc">
+								<span><img src="images/common/icon_dot_b.png" alt="" /></span>
+								<p>Launching</p>
+								<p class="txt_kindoh2">
+									New  Brand<br />
+									for<br />
+									Adult Hygiene Products
+								</p>
+								<p class="bg_bar">in 2019</p>
+							</div>
+						</li>
+						<li class="last brand4">
+							<img src="images/main/icon_brand04.png" alt="" />
+							<div class="desc">
+								<span><img src="images/common/icon_dot_b.png" alt="" /></span>
+								<p>Launching</p>
+								<p class="txt_kindoh2">
+									New  Brand<br />
+									for<br />
+									Family Products
+								</p>
+								<p class="bg_bar">in 2019</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div><!-- //brand & products -->
+
+			<!-- join us -->
+			<div class="join_wrap scroll">
+				<div class="map" data-scroll="toggle(.fromTopIn, .fromTopOut) addWidth once">
+					<!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.871349352172!2d13.40258581598231!3d52.52469544363338!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a851e1064fa7ab%3A0x14a64a245331a100!2zTmV1ZSBTY2jDtm5oYXVzZXIgU3RyLiAzLTUsIDEwMTc4IEJlcmxpbiwg64-F7J28!5e1!3m2!1sko!2skr!4v1532912424314"></iframe> -->
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2427.482963743436!2d13.40258581598231!3d52.52469544363338!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a851e1064fa7ab%3A0x14a64a245331a100!2zTmV1ZSBTY2jDtm5oYXVzZXIgU3RyLiAzLTUsIDEwMTc4IEJlcmxpbiwg64-F7J28!5e0!3m2!1sko!2skr!4v1532912730959"></iframe>
+					<div class="address">
+						<h2>Join us</h2>
+						<h4 class="noto">Join our team and <br class="mobile" />share your love with us.</h4>
+						<a href="mailto:lyj0420@kindoh.com" class="italic noto btn_email">lyj0420@kindoh.com</a>
+						<div class="noto company_addr">
+							<p class="desc">Neue Schönhauser Straße 3-5, 10178, <br class="mobile" />Berlin, Germany</p>
+						</div>
+					</div>
+				</div>
+			</div><!-- //join us -->
+
+		</div><!-- //content -->
+		
+		<!-- footer -->
+		<div id="footer">
+			<div class="clearfix">
+				<div class="left_box footer_logo"><img src="images/common/img_footer_logo.png" alt="kindoh" /></div>
+				<div class="noto left_box company_info">
+					<a href="http://www.kindoh.com/" target="_blank">kindoh.com</a><br />
+					<!-- <span>Business Registration No. : 211-87-73220</span><br />
+					<span>Customer Service:+82.80-881-9835 / FAX : 02-543-9835</span><br /> -->
+					<span>© Kindoh GmbH. All rights reserved.</span>
+				</div>
+				<div class="right_box family_site">
+					<select name="family" id="family">
+						<option value="">Family Site</option>
+						<option value="brand_kr">Kindoh Brand Site KR</option>
+						<option value="mall_kr">Kindoh Mall Site KR</option>
+					</select>
+				</div>
+				<div class="sns_area">
+					<a href="https://www.instagram.com/kindoh_official/" target="_blank" class="btn_insta">instagram</a>
+					<a href="https://www.facebook.com/kindoh.official/" target="_blank" class="btn_fb">facebook</a>
+					<!-- <a href="https://plus.google.com/discover" target="_blank" class="btn_gp">google+</a>
+					<a href="https://twitter.com/?lang=ko" target="_blank" class="last btn_tw">twitter</a> -->
+				</div>
+			</div>
+		</div><!-- //footer -->
+	</div>
+</body>
+</html>

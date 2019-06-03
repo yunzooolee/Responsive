@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 위 3개의 메타 태그는 *반드시* head 태그의 처음에 와야합니다; 어떤 다른 콘텐츠들은 반드시 이 태그들 *다음에* 와야 합니다 -->
+    <title> iCare4U 크론병</title> 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> 
+	<!--bootstrap js -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <!-- IE8 에서 HTML5 요소와 미디어 쿼리를 위한 HTML5 shim 와 Respond.js -->
+    <!-- WARNING: Respond.js 는 당신이 file:// 을 통해 페이지를 볼 때는 동작하지 않습니다. -->
+    <!--[if lt IE 9] -->
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+     <!--  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script> 
+    <![endif]-->
+	  <!-- bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+	<!-- 부가적인 theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">	
+	<link href="css/base.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+  </head>  
+</head> 
+<body>
+	<div id="SubPage" class="wrap col-lg-12 col-md-12">
+		<div id="header" class="clearfix">  			
+			<div class="navbar-wrapper">
+			  <div class="container">  
+				<nav class="navbar navbar-inverse navbar-static-top">
+				  <div class="container">
+					<div class="navbar-header">
+					  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">			  
+						<span class="sr-only">mobile</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					  </button> 								 
+						<a class="navbar-brand hidden-sm hidden-xs" href="/" title="iCare4U 크론병">
+							<img src="images/common/logo.jpg" alt="iCare4U" />  
+						</a>						 
+					</div>		
+					<div class=" top_search">
+						<div class="input-group stylish-input-group">
+							<input type="text" class="form-control" placeholder="질환찾기">
+							<span class="input-group-addon">
+								<button type="submit">
+									<span class="glyphicon glyphicon-search"></span>
+								</button>  
+							</span>
+						</div>
+					</div>	
+					<!-- if mobile logo -->					
+					<a class="navbar-brand visible-sm visible-xs" href="/" title="iCare4U 크론병">	
+						<img src="images/common/logo_m.jpg" alt="iCare4U" />  
+					</a> 
+					<!-- // if mobile logo -->			
+					<div id="navbar" class="navbar-collapse collapse " aria-expanded="false" style="height:1px"> 
+						<ul class="nav navbar-nav visible-sm visible-xs">
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">크론병 바로알기</a>
+								<ul class="dropdown-menu" role="menu">
+								<li><a href="#">크론병이란 무엇인가요?</a></li>
+								<li><a href="#">크론병은 왜 생기나요?</a></li>
+								<li><a href="#">크론병이 생기면 어떤 증상이 나타나요?</a></li> 
+								<li><a href="#">크론병이 생긴 것을 어떻게 알 수 있나요?</a></li> 
+								<li><a href="#">소아크론병</a></li> 
+								<li><a href="#">궁금해요</a></li> 
+							  </ul>							
+							</li>                 
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">크론병 치료하기</a>
+								<ul class="dropdown-menu" role="menu">
+								<li><a href="#">크론병은 어떻게 치료하나요?</a></li> 
+								<li><a href="#">궁금해요</a></li> 
+							  </ul>
+							</li> 
+							<li class="dropdown">
+							  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">크론병과 살아가기</a>
+							  <ul class="dropdown-menu" role="menu">
+								<li><a href="#">음식 등 식이요법은 어떻게 관리하나요?</a></li>
+								<li><a href="#">운동, 생활은 어떻게 관리하나요?</a></li>
+								<li><a href="#">궁금해요</a></li> 
+							  </ul>
+							</li>		
+						</ul> 	 
+						<ul class="nav navbar-nav">
+							<li><a class="active" href="#none">최근비디오</a></li>                 
+							<li><a href="#none">비디오 강좌</a></li>
+							<li><a href="#none">유용한 정보</a></li>          
+						</ul> 	 
+					</div> 						
+				  </div>   
+				</nav> 
+			  </div>
+			</div> <!-- navbar-wrapper -->		 
+		</div> <!-- // header -->
+		
+		<div id="container" class="container clearfix containerWrap">
+			<div class="content"> 
+				<!-- #banner -->
+				<div id="banner" class="clearfix ">
+					<div class="container-inner">						
+						<!-- banner-inside -->
+						<div id="banner-inside" class="clearfix"> 
+							<div class="col-lg-12 col-md-12 col-sm-12  hidden-xs">
+								<div data-type="region" data-name="banner" class="region region-banner">
+									<aside data-type="block" data-module="block" id="block-block-1" class="block block-block clearfix">					  
+									<img src="images/sub/sub_visual.png" alt="서브 비주얼" />
+								</aside>
+							  </div>
+							</div> 
+						</div>
+						<!--// banner-inside -->    
+					</div>
+				</div>
+				<!-- //  banner -->						 
+			</div><!-- // content -->
+			
+			<div id="page" class="clearfix ">
+				<div class="content fluid-container"> 
+					<div class="col-lg-3 col-md-3 col-sm-3   hidden-xs">				
+						<div class="panel-group" id="accordion01">
+							<div class="panel panel-default">
+								<div class="panel-heading accordion-toggle" role="tab" id="headingOne01">
+									 <h4 class="panel-title">
+										<a data-toggle="collapse" data-parent="#accordion01" href="#collapseOne01" aria-expanded="true" aria-controls="collapseOne01">크론병 바로알기</a>
+									 </h4>
+								</div>
+								<div id="collapseOne01" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne01">
+									<div class="panel-body">
+										<ul class="list-group">
+										  <li class="list-group-item"><a href="#">크론병이란 무엇인가요?</a></li>
+										  <li class="list-group-item"><a href="#">크론병은 왜 생기나요?</a></li>
+										  <li class="list-group-item"><a href="#">크론병이 생기면 <br/>어떤 증상이 나타나요?</a></li>
+										  <li class="list-group-item"><a href="#">크론병이 생긴 것을<br/> 어떻게 알 수 있나요?</a></li>
+										  <li class="list-group-item"><a href="#">소아크론병</a></li>
+										  <li class="list-group-item"><a href="#"> 궁금해요</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading accordion-toggle" role="tab" id="headingTwo01">
+									 <h4 class="panel-title">
+										<a class="collapsed" data-toggle="collapse" data-parent="#accordion01" href="#collapseTwo01" aria-expanded="true" aria-controls="#collapseTwo01">
+											크론병 치료하기
+										</a>
+									</h4>
+								</div>
+								<div id="collapseTwo01" class="panel-collapse collapse">
+									<div class="panel-body">  
+										<div class="col-md-9 col-sm-9 col-sx-12">
+											<ul class="list-group"> 
+											  <li class="list-group-item"><a href="#">크론병은 <br/>어떻게 치료하나요?</a></li>
+											  <li class="list-group-item"><a href="#">궁금해요</a></li>
+											</ul>
+										</div>									
+									</div>
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading accordion-toggle" role="tab" id="headingThree01">
+									 <h4 class="panel-title">
+										<a class="collapsed" data-toggle="collapse" data-parent="#accordion01" href="#collapseThree01" aria-expanded="true" aria-controls="#collapseThree01">
+											크론병과 살아가기
+										</a>
+									</h4>
+								</div>
+								<div id="collapseThree01" class="panel-collapse collapse">
+									<div class="panel-body"> 
+										<div class="col-md-9 col-sm-9 col-sx-12">
+											<ul class="list-group">
+											  <li class="list-group-item"><a href="#">음식 등 식이요법은<br/>어떻게 관리하나요?</a></li>
+											  <li class="list-group-item"><a href="#">운동, 생활은 <br/>어떻게 관리하나요?</a></li>
+											  <li class="list-group-item"><a href="#">궁금해요</a></li>
+											</ul>
+										</div> 
+									</div>
+								</div>
+							</div>
+						</div> 
+					</div> <!-- //col-lg-3 -->
+					
+					<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 pull-right  InfoPage"> 				
+						<h2>유용한 정보</h2>
+						<div class="panel-group" id="accordion1">					
+							<div class="panel panel-default">
+								 <div class="panel-heading accordion-toggle " data-toggle="collapse" data-parent="#accordion1" data-target="#collapseOne1"> 
+									  <h4 class="panel-title"><a href="javascript:void(0);"> 크론병과 궤양성 대장염을 어떻게 구별할 수 있나요?</a></h4>
+								</div>
+								<div id="collapseOne1" class="panel-collapse collapse in">
+									<div class="panel-body">
+										<p>크론병과 궤양성 대장염은 겉으로 드러나는 증상이 유사하여 환자가 느끼는 증상만으로 병을 구분하는 것은 매우 어렵습니다. 크론병의 증상은 침범된 위치와 활성도에 따라 매우 다양하게 나타납니다. 소화관 염증에 의한 설사, 복통 등의 증상과 함께, 열이 나거나 식욕이 없어지는 등의 전신적인 증상이 비교적 흔하게 나타납니다. </p>
+										<p>소화관뿐만 아니라 관절, 눈, 피부, 간, 신장 등의 장관 외 증상도 자주 볼 수 있습니다. 증상의 종류와 정도는 환자에 따라 차이가 많이 나며, 증상이 서서히 나타나기도 하고 때로는 급속히 진전하기도 하는데, 이러한 증상 양상은 염증성 장질환의 하나인 궤양성 대장염도 마찬가지입니다. 그러나 크론병에서는 궤양성 대장염에 비하여 환자가 느끼는 괴로움이 더 심한 예가 많으며, 장기적인 경과와 치료에 대한 반응도 더 나빠서 수술에 이르게 되는 경우가 많습니다. 항문 주위의 불편감 또는 통증도 크론병에서 흔히 나타나는 증상입니다. 이런 증상은 항문 주위에 농양(고름집), 누공(직장과 항문 주위의 피부 사이에 구멍이 뚫리는 것) 및 열상(항문 주위가 찢어지는 것)과 연관되어 있습니다. 이와 같이 항문 주위에 생기는 병변은 궤양성 대장염보다 크론병에서 더욱 흔합니다.</p> 
+										<p>또한 크론병은 궤양성 대장염에 비하여 체중이 감소하는 예가 많고, 특히 소아 환자에서는 성장 장애가 종종 동반되기도 합니다.주로 직장(곧창자, rectum)을 침범하며 큰창자(대장)에 질병 범위가 국한되는 궤양성 대장염과는 달리 크론병은 위장관 대부분을 침범할 수 있으며 작은창자(소장)를 침범하는 경우도 드물지 않습니다. 검사를 시행하기 어려운 금기 상황이 아니라면 대장내시경 검사를 하면서 조직검사를 하면 염증성 장질환이 있는지, 침범된 부위가 어딘지, 얼마나 심한지를 알아 볼 수 있지만, 조직검사 결과만으로 궤양성 대장염과 크론병을 구분하는 것은 어렵습니다. 크론병 환자의 장을 내시경으로 검사해 보면 병이 있는 부분의 점막이 심하게 부어 마치 자갈밭 같은 모양으로 보이며, 주위 조직과 잘 구별되는 궤양이 발견되는 것이 특징적입니다. 궤양이 큰 경우에는 대부분 장의 방향을 따라 궤양이 길게 나타나며(종주형 궤양), 이외에도 형태가 분명하지 않은 아프타 궤양(작은 궤양)을 흔히 관찰할 수 있습니다. 크론병에서는 이런 이상이 대장과 소장의 여러 곳에 동시에 생기기도 하고, 병이 있는 부분 사이에 정상적인 부분이 끼어 있을 수 있습니다.반면 궤양성 대장염은 대개 병의 침범 부위가 연속적이며, 침범 부위 전반에 걸쳐 점막이 붉게 변하고 부어있으며(부종), 점막의 혈관이 사라진 모습을 볼 수 있습니다. 또한 작은 자극에도 쉽게 상처가 생기고 출혈되는 점막 유약성을 보이는데, 심한 궤양성 대장염에서는 아무런 자극을 가하지 않아도 피가 나는 증상이 관찰되기도 합니다.<p>
+									</div>
+								</div>
+							</div> <!-- //panel  -->
+							<div class="panel panel-default">
+								<div class="panel-heading accordion-toggle collapsed"  data-toggle="collapse" data-parent="#accordion1" data-target="#collapseTwo1">
+									 <h4 class="panel-title"> <a href="javascript:void(0);">크론병에 걸리면 어떤 증상이 나타나나요?</a></h4> 
+								</div>
+								<div id="collapseTwo1" class="panel-collapse collapse">
+									<div class="panel-body">   
+										<p>크론병은 어느 분절에서나 불연속적으로 생길 수 있는 만성적, 재발성 염증성 장질환으로 가장 많이 발생하는 부위는 회장의 말단부위입니다. 이환된 장의 모든 벽, 특히 점막 밑 조직이 두꺼워지고 치사율이 높지 않지만 재발과 합병증으로 인해 환자가 무력해질 수 있습니다. 백인과 유태인에게 많이 발생하며 가족적 성향을 보입니다. 어떠한 연령층에서도 생길 수 있으나 주로 20대에 많이 발생하고 남녀 발생률은 거의 같다고 합니다. 원인은 불분명하고 자가면역질환으로 추정되고 있습니다. 급성 증상 보이기도 하나 경과가 느리게 진행되고 복통, 설사, 혈변(간혹), 구토, 열, 직장농양, 직장누공, 직장 주위 치열 누공, 영양결핍, 체중감소, 관절염(20%), 피부의 결절성 홍반, 괴저성 농피증이 흔하며 간혹 신결석이 발생하기도 합니다.</p>
+										 					
+									</div>
+								</div>
+							</div> <!-- //panel  -->
+							<div class="panel panel-default">
+								<div class="panel-heading accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion1" data-target="#collapseThree1">
+									 <h4 class="panel-title"  ><a href="javascript:void(0);">크론병이 있으면 육식은 피해야하나요? 어떤 음식이 좋은가요?</a></h4> 
+								</div>
+								<div id="collapseThree1" class="panel-collapse collapse">
+									<div class="panel-body">  
+											<p>크론병의 증상(설사 또는 변비, 복통, 구역질 및 체중 감소 등)이 먹는 것과 관련 있다고 여기는 환자들은 식사를 어떻게 하는 것이 좋은지 매우 궁금해 합니다. 그러나 병이 어디에 어떤 양상으로 침범했는지에 따라 식이가 미치는 영향이 다르고, 어떤 음식을 먹었을 때 나타나는 반응도 환자마다 다르므로 일률적으로 크론병에 대해 어떤 식사가 좋고 어떤 것은 나쁜지 판단하기 어렵습니다. 어떠한 지침을 따르기 보다는 환자에 따라 자신에게 맞는 음식을 섭취하고, 스스로 식사와 증상 사이의 관계를 잘 살피면서, 이를 기록해 두는 것이 좋습니다. 이렇게 하면 어떤 음식이 자신을 불편하게 하는지 파악할 수 있습니다. 어떤 특정한 음식 때문에 크론병이 생기는 것은 아니지만 염증이 진행할 때에는 자극적이거나 섬유소가 많은 음식보다는 부드러운 음식을 먹는 것이 좋습니다. 또한 설사가 심하다면 수분과 염분이 많이 배설되므로 부족하지 않도록 주의하여야 합니다.</p>
+											<p>증상이 개선되면 2∼3일에 걸쳐 한두 개씩 음식을 추가해서 먹어보고 증상이 악화되지는 않는지 지켜봅니다. 만약 별다른 이상이 없다면 2~3일 후에 다른 음식도 곁들여 먹어보는 방식으로 음식 수를 늘려갑니다. 보통 부드럽게 요리한 육류나 생선, 채소, 밥 또는 죽, 감자 같은 것이 먹기에 편하다고 알려져 있습니다. 무엇보다도 영양분이 고르게 포함되도록 섭취하는 것이 중요합니다.</p>
+											<p>지방산이나 패스트푸드 섭취 증가와 염증성 장질환의 발생 사이에 관련성이 있음을 시사하는 연구 결과들이 있지만 음식물과 염증성 장질환 발생 사이에 연관성이 있는지 명확하게 밝혀진 것은 아닙니다.</p> 
+									</div>
+								</div>
+							</div> <!-- //panel  -->
+							<div class="panel panel-default">
+								<div class="panel-heading accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion1" data-target="#collapseFour1">
+									 <h4 class="panel-title"  ><a href="javascript:void(0);">크론병은 유전되나요?</a></h4> 
+								</div>
+								<div id="collapseFour1" class="panel-collapse collapse">
+									<div class="panel-body">  
+											<p>크론병을 유발하는 것이 어떤 것인지 아직 명확히 밝혀지지 않았으나, 다양한 유전적, 면역적, 환경적 요인들이 상호작용하여 크론병을 일으키는 것으로 생각됩니다. 즉, 크론병에 걸릴 유전적 소인이 많은 사람이 어떤 환경적 요인에 노출되면 정상으로 장내에 존재하는 세균에 대해 비정상적인 면역반응이 지속적으로 일어나면서 만성적인 염증성 장질환이 발생하는 것으로 이해되고 있습니다.환자 중에서 크론병을 앓는 가족력이 있는 경우는 드물게 보고되며, 크론병 가족에서 그렇지 않은 가족에서보다 크론병을 진단받는 빈도가 조금 더 높다는 보고도 있습니다. 그러나 가족 중에 크론병 환자가 있다 하더라도 가족 내 누구에게 이 질병이 나타날지 예측할 수 있는 인자는 아직 알려져 있지 않습니다. 또한 국내에선 외국과 달리 가족 내 발생 빈도가 낮으므로 본인의 병이 자식에게도 발생할까 지나치게 걱정할 필요는 없습니다.</p> 
+									</div>
+								</div>
+							</div> <!-- //panel  -->
+							<div class="panel panel-default">
+								<div class="panel-heading accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion1" data-target="#collapseFive1">
+									 <h4 class="panel-title"  ><a href="javascript:void(0);">크론병인데 흡연해도 될까요?</a></h4> 
+								</div>
+								<div id="collapseFive1" class="panel-collapse collapse">
+									<div class="panel-body">  
+											<p>크론병과 흡연은 밀접하게 연관되어 있습니다. 흡연은 크론병의 발병을 촉진시키는 매우 중요한 위험 인자로 알려져 있습니다. 흡연을 하는 크론병 환자들은 비흡연자들에 비해 재발률이 높고 수술을 받아야 할 확률도 높으며, 면역억제제를 사용하는 빈도도 높습니다.실제 여러 연구에서 흡연자에서의 수술 후 재발률이 비흡연자들에 비해 약 두 배 정도 높은 것으로 보고하고 있으며 간접흡연 역시 좋지 않은 영향을 미친다고 알려져 있습니다. 그러므로 크론병을 진단받았거나 증상이 의심된다면 반드시 금연을 해야 합니다.</p>
+									</div>
+								</div>
+							</div> <!-- //panel  -->
+							<div class="panel panel-default">
+								<div class="panel-heading accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion1" data-target="#collapse06">
+									 <h4 class="panel-title"  ><a href="javascript:void(0);">궤양성 대장염과 크론병은 어떻게 다른가요?</a></h4> 
+								</div>
+								<div id="collapse06" class="panel-collapse collapse">
+									<div class="panel-body">  
+											<p>궤양성 대장염과 크론병은 만성적인 복통, 설사, 혈변 등의 증상을 보이는 염증상 장 질환의 2가지 형태입니다. 그러나 염증성 장질환에 대한 원인이 확실히 밝혀지지 않아서 같은 원인으로 발생한 병이 다른 형태로 나타난 것이라는 주장도 있고, 아예 다른 병이란 주장도 있습니다. 현재까지 이 두 질환의 진단은 임상적, 내시경적, 조직학적 특징을 종합하여 내리게 되며 진단에 따라 그 치료 방법과 예후도 조금 다르기 때문에 그 둘을 구분하는 것이 중요합니다.혈성 설사는 두 질환의 대표적인 임상 증상이나 궤양성 대장염에서는 혈성 설사 자체가 더 심하고 크론병은 복통, 복부 종괴 혹은 항문주위 합병증으로 인한 항문 열상, 누공 등의 증상이 흔합니다. 내시경적 소견으로는 궤양성 대장염은 직장을 포함한 부위에 얕은 궤양성 병변이 연속적으로 관찰되며 정상 점막은 거의 보기 힘듭니다. 이에 비해 크론병은 장의 길이 방향으로 종주하는, 깊은 궤양성 병변이 정상 점막들 사이에 보이며 산발적으로 나타납니다. 궤양성 대장염은 병변이 대장에만 있어 전대장절제술을 시행하면 완치될 수 있습니다. 하지만, 크론병은 입안에서 항문까지 위장관의 어느 곳에라도 국소적으로 침범할 수 있기 때문에 염증 부위를 절제해도 대부분의 경우 수술 후 연결부위나 다른 부위의 장관에서 재발하게 됩니다. 조직학적으로 볼 때 궤양성 대장염에서는 염증이 장의 가장 안쪽인 점막에 국한되지만, 크론병은 장의 전층에 염증이 침윤할 수 있고 비건락성 유아종(염증세포들로 이루어진 결절)을 관찰할 수 있습니다. 그러나 이상의 감별점들 중 어느 하나도 절대적으로 두 질환을 구분하는 기준이 될 수 없습니다. 실제로 두 병의 특징이 섞여 있어 어느 한쪽으로 분류하기 어려운 소위 미확정성 대장염이 염증성 장질환 환자의 5~20%에서 관찰됩니다.</p>
+									</div>
+								</div>
+							</div> <!-- //panel  -->
+							<div class="panel panel-default">
+								<div class="panel-heading accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion1" data-target="#collapse07">
+									 <h4 class="panel-title"  ><a href="javascript:void(0);">크론병 환자도 여행을 할 수 있나요?</a></h4> 
+								</div>
+								<div id="collapse07" class="panel-collapse collapse">
+									<div class="panel-body">  
+											<p>크론병 환자도 해외여행 등 장거리 여행이 가능하지만, 사전에 주치의와 상의하여 현재 자신의 상태에 비추어 무리가 없는지를 확인해야 합니다. 그리고 자신이 쓰고 있는 약의 이름, 특히 성분명과 용량을 정확히 알고 있어야 하고, 비상시에 대비한 충분한 양의 약이 있는지를 확인해야 합니다.위생상태가 좋지 않은 지역을 여행한다면, 세균성 장염에 걸리지 않도록 위생에 주의하여야 하는 것도 잊으면 안 됩니다. 세균성 장염은 크론병을 악화시킬 수 있기 때문입니다.</p>
+									</div>
+								</div>
+							</div> <!-- //panel  -->
+							<div class="panel panel-default">
+								<div class="panel-heading accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion1" data-target="#collapse08">
+									 <h4 class="panel-title"  ><a href="javascript:void(0);">크론병에 걸렸을 경우 운동은 해도 되나요?</a></h4> 
+								</div>
+								<div id="collapse08" class="panel-collapse collapse">
+									<div class="panel-body">  
+											<p>크론병 환자도 가능한 한 활동적으로 생활하는 것이 중요합니다. 질병 상태가 운동에 지장을 초래할 정도가 아니면 운동은 해도 됩니다. 단, 병이 악화됐을 시에는 지나치게 피로를 유발하거나 복통, 관절통 등의 증상을 악화시킬 정도로 격렬한 운동은 제한하는 것이 좋습니다.병이 호전될 시에는 정상인과 동일하게 운동을 할 수 있습니다. 다만, 고용량의 스테로이드치료로 뼈가 약해져서 골절의 위험이 높은 사람이라면, 럭비나 레슬링같이 격렬하게 몸을 부딪히는 운동은 피하는 것이 좋습니다.</p>
+									</div>
+								</div>
+							</div> <!-- //panel  -->
+							<div class="panel panel-default">
+								<div class="panel-heading accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion1" data-target="#collapse09">
+									 <h4 class="panel-title"  ><a href="javascript:void(0);">크론병 환자도 직장을 계속 다닐 수 있나요?</a></h4> 
+								</div>
+								<div id="collapse09" class="panel-collapse collapse">
+									<div class="panel-body">  
+											<p>병이 호전된 상태라면 정상적인 직장생활이 가능합니다. 크론병을 갖고 있더라도 학교에 다니고, 직장생활을 하며, 결혼하고, 아이를 낳고, 가족을 부양할 수 있으며, 운동, 취미, 여행 등 모든 것이 가능합니다. 증상이 악화된다면 잠시 병가를 내고 입원치료를 받을 수도 있지만, 증상이 호전되면 완전한 정상생활로 복귀할 수 있습니다.</p>
+									</div>
+								</div>
+							</div> <!-- //panel  -->
+							<div class="panel panel-default">
+								<div class="panel-heading accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion1" data-target="#collapse10">
+									 <h4 class="panel-title"  ><a href="javascript:void(0);">크론병 치료제를 복용중인데 모유를 먹여도 될까요?</a></h4> 
+								</div>
+								<div id="collapse10" class="panel-collapse collapse">
+									<div class="panel-body">  
+											<p>일반적으로 모유 수유는 가능합니다. 적은 양의 약물이 모유로 배출될 수도 있지만, 아이에게 해를 끼치지 않는다고 알려져 있습니다. 하지만, 크론병 치료제의 종류에 따라 모유 수유가 제한적인 경우가 있을 수 있으므로, 담당 의료진과 상의하는 것을 권장합니다.</p>
+									</div>
+								</div>
+							</div> <!-- //panel  -->
+							
+						</div> <!-- //panel-group -->
+					</div> <!-- //col-lg-8 -->						 
+				</div><!-- // content -->			
+			</div> <!-- // page -->
+		</div> <!--// container -->
+						
+		<div id="footer" class="footer">
+			<div class="inline col-md-12 col-sm-12">
+				<div class="ft_center col-md-12 col-sm-12 col-sx-12 visible-sm visible-xs ">
+					<div class="socialArea">
+						<ul>
+							<li><a href="javascript:void(0);" title="Facebook" class="fb"><img src="images/common/icon_fb.png" alt="facebook" /></a></li> 
+							<li><a href="javascript:void(0);" title="Twitter" class="tw"><img src="images/common/icon_tw.png" alt="twitter" /></a></li> 
+							<li><a href="javascript:void(0);" title="Youtube" class="yt"><img src="images/common/icon_yt.png" alt="youtube" /></a></li> 
+							<li><a href="javascript:void(0);" title="GooglePlus" class="gp"><img src="images/common/icon_gp.png" alt="googleplus" /></a></li> 
+						</ul>
+					</div> 
+				</div>
+				<div class="ft_left col-md-5 col-sm-12">
+					<p class="address">서울특별시 용산구 한강대로 92 LS용산타워 25층</p>
+					<p class="copyright">All contents © Copyright Janssen Korea Ltd. All Rights Reserved</p> <!-- &copy; < //?php echo date("Y");?> --> 
+				</div> 
+				<div class="ft_center col-sm-2  hidden-sm hidden-xs ">
+					<div class="socialArea">
+						<ul>
+							<li><a href="javascript:void(0);" title="Facebook" class="fb"><img src="images/common/icon_fb.png" alt="facebook" /></a></li> 
+							<li><a href="javascript:void(0);" title="Twitter" class="tw"><img src="images/common/icon_tw.png" alt="twitter" /></a></li> 
+							<li><a href="javascript:void(0);" title="Youtube" class="yt"><img src="images/common/icon_yt.png" alt="youtube" /></a></li> 
+							<li><a href="javascript:void(0);" title="GooglePlus" class="gp"><img src="images/common/icon_gp.png" alt="googleplus" /></a></li> 
+						</ul>
+					</div> 
+				</div>  
+				<div class="ft_right col-md-5 col-sm-12">
+					<div class="bottomArea">
+						<ul>
+							<li><a href="javascript:void(0);">개인정보취급방침</a></li>
+							<li><a href="javascript:void(0);">법적고지</a></li>
+							<li><a href="javascript:void(0);">Disdaimer</a></li>
+							<li><a href="javascript:void(0);">접근제한</a></li>
+							<li><a href="javascript:void(0);">사이트맵</a></li>
+						</ul>
+					</div> <!-- //bottomArea -->
+				</div> 
+				<div class="ft_full col-sm-12">
+					<p>Your use of the information on this site is subject to the terms of your Legal Notice. Please see our Privacy Policy.<br/> This sites is published by Janssen Korea Ltd. which is solely responsible for its contents. <br/>This information is intended for residents of Korea.</p>
+				</div>  
+			</div> <!-- // inline --> 
+		</div> <!-- // footer -->
+	</div>
+</body>	 
+
+<script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function () {
+		//search form
+		 $(".form-control").hide();
+		 $(".input-group-addon").click(function () {
+			 if ( $(this).hasClass('on') ) {
+		        $(this).removeClass('on');
+		    } else {
+		        $('.gbfixed_anchors ul li a.on').removeClass('on');
+		        $(this).addClass('on');    
+		    }		
+			$(".form-control").toggle(); 
+			e.preventDefault();			
+		});	   
+		
+		 $("#accordion01 .list-group a ").click(function () {
+			 if ( $(this).hasClass('on') ) {
+		        $(this).removeClass('on');
+		    } else {
+		        $('#accordion01 .list-group a.on').removeClass('on');
+		        $(this).addClass('on');    
+		    }		 
+		});	 
+	});   
+</script>	 
+</html> 
+ 

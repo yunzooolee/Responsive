@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 위 3개의 메타 태그는 *반드시* head 태그의 처음에 와야합니다; 어떤 다른 콘텐츠들은 반드시 이 태그들 *다음에* 와야 합니다 -->
+    <title> iCare4U 크론병</title> 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> 
+	<!--bootstrap js -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <!-- IE8 에서 HTML5 요소와 미디어 쿼리를 위한 HTML5 shim 와 Respond.js -->
+    <!-- WARNING: Respond.js 는 당신이 file:// 을 통해 페이지를 볼 때는 동작하지 않습니다. -->
+    <!--[if lt IE 9] -->
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+     <!--  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script> 
+    <![endif]-->
+	  <!-- bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+	<!-- 부가적인 theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">	
+	<link href="css/base.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+  </head>  
+</head> 
+<body>
+	<div id="SubPage" class="wrap col-lg-12 col-md-12">
+		<div id="header" class="clearfix">  			
+			<div class="navbar-wrapper">
+			  <div class="container">  
+				<nav class="navbar navbar-inverse navbar-static-top">
+				  <div class="container">
+					<div class="navbar-header">
+					  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">			  
+						<span class="sr-only">mobile</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					  </button> 								 
+						<a class="navbar-brand hidden-sm hidden-xs" href="/" title="iCare4U 크론병">
+							<img src="images/common/logo.jpg" alt="iCare4U" />  
+						</a>						 
+					</div>		
+					<div class=" top_search">
+						<div class="input-group stylish-input-group">
+							<input type="text" class="form-control" placeholder="질환찾기">
+							<span class="input-group-addon">
+								<button type="submit">
+									<span class="glyphicon glyphicon-search"></span>
+								</button>  
+							</span>
+						</div>
+					</div>	
+					<!-- if mobile logo -->					
+					<a class="navbar-brand visible-sm visible-xs" href="/" title="iCare4U 크론병">	
+						<img src="images/common/logo_m.jpg" alt="iCare4U" />  
+					</a> 
+					<!-- // if mobile logo -->			
+					<div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height:1px"> 
+						<ul class="nav navbar-nav visible-sm visible-xs">
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">크론병 바로알기</a>
+								<ul class="dropdown-menu" role="menu">
+								<li><a href="#">크론병이란 무엇인가요?</a></li>
+								<li><a href="#">크론병은 왜 생기나요?</a></li>
+								<li><a href="#">크론병이 생기면 어떤 증상이 나타나요?</a></li> 
+								<li><a href="#">크론병이 생긴 것을 어떻게 알 수 있나요?</a></li> 
+								<li><a href="#">소아크론병</a></li> 
+								<li><a href="#">궁금해요</a></li> 
+							  </ul>							
+							</li>                 
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">크론병 치료하기</a>
+								<ul class="dropdown-menu" role="menu">
+								<li><a href="#">크론병은 어떻게 치료하나요?</a></li> 
+								<li><a href="#">궁금해요</a></li> 
+							  </ul>
+							</li> 
+							<li class="dropdown">
+							  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">크론병과 살아가기</a>
+							  <ul class="dropdown-menu" role="menu">
+								<li><a href="#">음식 등 식이요법은 어떻게 관리하나요?</a></li>
+								<li><a href="#">운동, 생활은 어떻게 관리하나요?</a></li>
+								<li><a href="#">궁금해요</a></li> 
+							  </ul>
+							</li>		
+						</ul> 	 
+						<ul class="nav navbar-nav">
+							<li><a class="active" href="#none">최근비디오</a></li>                 
+							<li><a href="#none">비디오 강좌</a></li>
+							<li><a href="#none">유용한 정보</a></li>          
+						</ul> 	 
+					</div> 						
+				  </div>   
+				</nav> 
+			  </div>
+			</div> <!-- navbar-wrapper -->		 
+		</div> <!-- // header -->
+		
+		<div id="container" class="container clearfix containerWrap">
+			<div class="content"> 
+				<!-- #banner -->
+				<div id="banner" class="clearfix ">
+					<div class="container-inner">						
+						<!-- banner-inside -->
+						<div id="banner-inside" class="clearfix"> 
+							<div class="col-lg-12 col-md-12 col-sm-12  hidden-xs">
+								<div data-type="region" data-name="banner" class="region region-banner">
+									<aside data-type="block" data-module="block" id="block-block-1" class="block block-block clearfix">					  
+									<img src="images/sub/sub_visual.png" alt="서브 비주얼" />
+								</aside>
+							  </div>
+							</div> 
+						</div>
+						<!--// banner-inside -->    
+					</div>
+				</div>
+				<!-- //  banner -->						 
+			</div><!-- // content -->
+			
+			<div id="page" class="clearfix ">
+				<div class="content fluid-container"> 
+					<div class="col-lg-3 col-md-3 col-sm-3   hidden-xs">				
+						<div class="panel-group" id="accordion01">
+							<div class="panel panel-default">
+								<div class="panel-heading accordion-toggle" role="tab" id="headingOne01">
+									 <h4 class="panel-title">
+										<a data-toggle="collapse" data-parent="#accordion01" href="#collapseOne01" aria-expanded="true" aria-controls="collapseOne01">크론병 바로알기</a>
+									 </h4>
+								</div>
+								<div id="collapseOne01" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne01">
+									<div class="panel-body">
+										<ul class="list-group">
+										  <li class="list-group-item"><a href="#">크론병이란 무엇인가요?</a></li>
+										  <li class="list-group-item"><a href="#">크론병은 왜 생기나요?</a></li>
+										  <li class="list-group-item"><a href="#">크론병이 생기면 <br/>어떤 증상이 나타나요?</a></li>
+										  <li class="list-group-item"><a href="#">크론병이 생긴 것을<br/> 어떻게 알 수 있나요?</a></li>
+										  <li class="list-group-item"><a href="#">소아크론병</a></li>
+										  <li class="list-group-item"><a href="#"> 궁금해요</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading accordion-toggle" role="tab" id="headingTwo01">
+									 <h4 class="panel-title">
+										<a class="collapsed" data-toggle="collapse" data-parent="#accordion01" href="#collapseTwo01" aria-expanded="true" aria-controls="#collapseTwo01">
+											크론병 치료하기
+										</a>
+									</h4>
+								</div>
+								<div id="collapseTwo01" class="panel-collapse collapse">
+									<div class="panel-body">  
+										<div class="col-md-9 col-sm-9 col-sx-12">
+											<ul class="list-group"> 
+											  <li class="list-group-item"><a href="#">크론병은 <br/>어떻게 치료하나요?</a></li>
+											  <li class="list-group-item"><a href="#">궁금해요</a></li>
+											</ul>
+										</div>									
+									</div>
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading accordion-toggle" role="tab" id="headingThree01">
+									 <h4 class="panel-title">
+										<a class="collapsed" data-toggle="collapse" data-parent="#accordion01" href="#collapseThree01" aria-expanded="true" aria-controls="#collapseThree01">
+											크론병과 살아가기
+										</a>
+									</h4>
+								</div>
+								<div id="collapseThree01" class="panel-collapse collapse">
+									<div class="panel-body"> 
+										<div class="col-md-9 col-sm-9 col-sx-12">
+											<ul class="list-group">
+											  <li class="list-group-item"><a href="#">음식 등 식이요법은<br/>어떻게 관리하나요?</a></li>
+											  <li class="list-group-item"><a href="#">운동, 생활은 <br/>어떻게 관리하나요?</a></li>
+											  <li class="list-group-item"><a href="#">궁금해요</a></li>
+											</ul>
+										</div> 
+									</div>
+								</div>
+							</div>
+						</div> 
+					</div> <!-- //col-lg-3 -->
+					
+					<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 pull-right LatestNews"> 				
+						<div class="sub_head">
+							<h2>최근기사</h2>
+						</div>
+						<div class="clearfix select_area hidden-xs">
+							<div class="select_form">
+								<select class="form-control col-lg-9 col-md-9 col-sm-9 col-xs-9">
+									<option>방송사선택</option>
+									<option>서울</option>
+									<option>인천</option>
+									<option>대전</option>
+									<option>부산</option>
+									<option>광주</option>
+								</select>
+								<a href="#none" class="btn_go col-lg-3 col-md-3 col-sm-3 col-xs-3">Go</a>
+							</div>
+							<div class="paging_area">
+								<div class="paging">PAGE <span class="curr_page">1</span> OF <span class="whole_page">18</span></div>
+								<ul class="pagination">
+									<li class="page-item">
+									  <a class="page-link" href="#" aria-label="Next">
+										<span aria-hidden="true">다음 &gt;</span>
+										<span class="sr-only">다음</span>
+									  </a>
+									</li>
+									<li class="page-item">
+									  <a class="page-link" href="#" aria-label="Last">
+										<span aria-hidden="true">마지막 &raquo;</span>
+										<span class="sr-only">마지막</span>
+									  </a>
+									</li>
+									<!-- <li class="page-item active"><a class="page-link" href="#">1</a></li>
+									<li class="page-item"><a class="page-link" href="#">2</a></li>
+									<li class="page-item"><a class="page-link" href="#">3</a></li>
+									<li class="page-item"><a class="page-link" href="#">4</a></li>
+									<li class="page-item"><a class="page-link" href="#">5</a></li> -->
+								  </ul>
+							</div>
+						</div>
+						<table class="table">
+							<colgroup>
+								<col width="*" />
+								<col width="29%" />
+							</colgroup>
+							<tbody>
+								<tr>
+									<td>
+										<a href="#none">희귀 장염증 질환 크론병 급증, 10~20대 환자가 희귀 장염증 질환 크론병 급증, 10~20대 환자가 희귀 장염증 질환 크론병 급증, 10~20대 환자가 희귀 장염증 질환 크론병 급증, 10~20대 환자가 희귀 장염증 질환 크론병 급증, 10~20대 환자가</a>
+									</td>
+									<td class="release_wrap">
+										<span class="release_date">12월08,2016</span> / <span class="location">KBC광주방송</span>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="#none">희귀 장염증 질환 크론병 급증, 10~20대 환자가 희귀 장염증 질환 크론병 급증, 10~20대 환자가 희귀 장염증 질환 크론병 급증, 10~20대 환자가 희귀 장염증 질환 크론병 급증, 10~20대 환자가 희귀 장염증 질환 크론병 급증, 10~20대 환자가</a>
+									</td>
+									<td class="release_wrap">
+										<span class="release_date">12월08,2016</span> / <span class="location">KBC광주방송</span>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="#none">희귀 장염증 질환 크론병 급증, 10~20대 환자가 희귀 장염증 질환 크론병 급증, 10~20대 환자가 희귀 장염증 질환 크론병 급증, 10~20대 환자가 희귀 장염증 질환 크론병 급증, 10~20대 환자가 희귀 장염증 질환 크론병 급증, 10~20대 환자가</a>
+									</td>
+									<td class="release_wrap">
+										<span class="release_date">12월08,2016</span> / <span class="location">KBC광주방송</span>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="#none">희귀 장염증 질환 크론병 급증, 10~20대 환자가 희귀 장염증 질환 크론병 급증, 10~20대 환자가 희귀 장염증 질환 크론병 급증, 10~20대 환자가 희귀 장염증 질환 크론병 급증, 10~20대 환자가 희귀 장염증 질환 크론병 급증, 10~20대 환자가</a>
+									</td>
+									<td class="release_wrap">
+										<span class="release_date">12월08,2016</span> / <span class="location">KBC광주방송</span>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="#none">희귀 장염증 질환 크론병 급증, 10~20대 환자가 희귀 장염증 질환 크론병 급증, 10~20대 환자가 희귀 장염증 질환 크론병 급증, 10~20대 환자가 희귀 장염증 질환 크론병 급증, 10~20대 환자가 희귀 장염증 질환 크론병 급증, 10~20대 환자가</a>
+									</td>
+									<td class="release_wrap">
+										<span class="release_date">12월08,2016</span> / <span class="location">KBC광주방송</span>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="#none">희귀 장염증 질환 크론병 급증, 10~20대 환자가 희귀 장염증 질환 크론병 급증, 10~20대 환자가 희귀 장염증 질환 크론병 급증, 10~20대 환자가 희귀 장염증 질환 크론병 급증, 10~20대 환자가 희귀 장염증 질환 크론병 급증, 10~20대 환자가</a>
+									</td>
+									<td class="release_wrap">
+										<span class="release_date">12월08,2016</span> / <span class="location">KBC광주방송</span>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="#none">희귀 장염증 질환 크론병 급증, 10~20대 환자가 희귀 장염증 질환 크론병 급증, 10~20대 환자가 희귀 장염증 질환 크론병 급증, 10~20대 환자가 희귀 장염증 질환 크론병 급증, 10~20대 환자가 희귀 장염증 질환 크론병 급증, 10~20대 환자가</a>
+									</td>
+									<td class="release_wrap">
+										<span class="release_date">12월08,2016</span> / <span class="location">KBC광주방송</span>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="#none">희귀 장염증 질환 크론병 급증, 10~20대 환자가 희귀 장염증 질환 크론병 급증, 10~20대 환자가 희귀 장염증 질환 크론병 급증, 10~20대 환자가 희귀 장염증 질환 크론병 급증, 10~20대 환자가 희귀 장염증 질환 크론병 급증, 10~20대 환자가</a>
+									</td>
+									<td class="release_wrap">
+										<span class="release_date">12월08,2016</span> / <span class="location">KBC광주방송</span>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="#none">희귀 장염증 질환 크론병 급증, 10~20대 환자가 희귀 장염증 질환 크론병 급증, 10~20대 환자가 희귀 장염증 질환 크론병 급증, 10~20대 환자가 희귀 장염증 질환 크론병 급증, 10~20대 환자가 희귀 장염증 질환 크론병 급증, 10~20대 환자가</a>
+									</td>
+									<td class="release_wrap">
+										<span class="release_date">12월08,2016</span> / <span class="location">KBC광주방송</span>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div> <!-- //col-lg-8 -->						 
+				</div><!-- // content -->			
+			</div> <!-- // page -->
+		</div> <!--// container -->
+						
+		<div id="footer" class="footer">
+			<div class="inline col-md-12 col-sm-12">
+				<div class="ft_center col-md-12 col-sm-12 col-sx-12 visible-sm visible-xs ">
+					<div class="socialArea">
+						<ul>
+							<li><a href="javascript:void(0);" title="Facebook" class="fb"><img src="images/common/icon_fb.png" alt="facebook" /></a></li> 
+							<li><a href="javascript:void(0);" title="Twitter" class="tw"><img src="images/common/icon_tw.png" alt="twitter" /></a></li> 
+							<li><a href="javascript:void(0);" title="Youtube" class="yt"><img src="images/common/icon_yt.png" alt="youtube" /></a></li> 
+							<li><a href="javascript:void(0);" title="GooglePlus" class="gp"><img src="images/common/icon_gp.png" alt="googleplus" /></a></li> 
+						</ul>
+					</div> 
+				</div>
+				<div class="ft_left col-md-5 col-sm-12">
+					<p class="address">서울특별시 용산구 한강대로 92 LS용산타워 25층</p>
+					<p class="copyright">All contents © Copyright Janssen Korea Ltd. All Rights Reserved</p> <!-- &copy; < //?php echo date("Y");?> --> 
+				</div> 
+				<div class="ft_center col-sm-2  hidden-sm hidden-xs ">
+					<div class="socialArea">
+						<ul>
+							<li><a href="javascript:void(0);" title="Facebook" class="fb"><img src="images/common/icon_fb.png" alt="facebook" /></a></li> 
+							<li><a href="javascript:void(0);" title="Twitter" class="tw"><img src="images/common/icon_tw.png" alt="twitter" /></a></li> 
+							<li><a href="javascript:void(0);" title="Youtube" class="yt"><img src="images/common/icon_yt.png" alt="youtube" /></a></li> 
+							<li><a href="javascript:void(0);" title="GooglePlus" class="gp"><img src="images/common/icon_gp.png" alt="googleplus" /></a></li> 
+						</ul>
+					</div> 
+				</div>  
+				<div class="ft_right col-md-5 col-sm-12">
+					<div class="bottomArea">
+						<ul>
+							<li><a href="javascript:void(0);">개인정보취급방침</a></li>
+							<li><a href="javascript:void(0);">법적고지</a></li>
+							<li><a href="javascript:void(0);">Disdaimer</a></li>
+							<li><a href="javascript:void(0);">접근제한</a></li>
+							<li><a href="javascript:void(0);">사이트맵</a></li>
+						</ul>
+					</div> <!-- //bottomArea -->
+				</div> 
+				<div class="ft_full col-sm-12">
+					<p>Your use of the information on this site is subject to the terms of your Legal Notice. Please see our Privacy Policy.<br/> This sites is published by Janssen Korea Ltd. which is solely responsible for its contents. <br/>This information is intended for residents of Korea.</p>
+				</div>  
+			</div> <!-- // inline --> 
+		</div> <!-- // footer -->
+	</div>
+</body>	 
+
+<script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function () {
+		//search form
+		 $(".top_search .form-control").hide();
+		 $(".input-group-addon").click(function () {
+			 if ( $(this).hasClass('on') ) {
+		        $(this).removeClass('on');
+		    } else {
+		        $('.gbfixed_anchors ul li a.on').removeClass('on');
+		        $(this).addClass('on');    
+		    }		
+			$(".top_search .form-control").toggle(); 
+			e.preventDefault();			
+		});	   
+		
+		 $("#accordion01 .list-group a ").click(function () {
+			 if ( $(this).hasClass('on') ) {
+		        $(this).removeClass('on');
+		    } else {
+		        $('#accordion01 .list-group a.on').removeClass('on');
+		        $(this).addClass('on');    
+		    }		 
+		});	 
+	});   
+</script>	 
+</html> 
+ 

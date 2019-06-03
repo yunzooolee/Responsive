@@ -1,0 +1,899 @@
+﻿@charset "utf-8";
+
+.mobile{display:none;}
+.web{display:block;}
+.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9{
+	padding:0;
+}
+/*============header============*/
+/*부트스트랩 nav*/
+#wrap .header .navbar{margin:0;padding:0;}
+#wrap .header .navbar .container-fluid {
+	margin:0;
+	padding:0;
+}
+#wrap .header .navbar .container-fluid >.navbar-collapse,
+#wrap .header .navbar .container-fluid >.collapse
+#wrap .header .navbar .container-fluid >.navbar-header,
+#wrap .header .navbar .container > .navbar-collapse,
+#wrap .header .navbar .container >.navbar-header{
+    margin:0;
+	padding:0;
+}
+#wrap .header .navbar .container-fluid > .navbar-header{
+	float:left;
+	width:20%;
+	/* padding-right:30%; */
+}
+#wrap .header .navbar .container-fluid > .navbar-collapse{
+	float:right;
+	padding-right:5%;
+}
+#wrap .header .navbar .container-fluid .navbar-header .logo .navbar-brand {
+    float: none;
+	width:100%;
+	margin:0;
+    height: auto;
+    padding: 0;
+    font-size: inherit;
+    line-height: inherit;
+}
+#wrap .header .navbar .container-fluid .navbar-form{
+	float:none !important;
+	position:absolute;
+	top:0;
+	right:0;
+	padding:0;
+}
+#wrap .header .navbar .container-fluid  .form-group{}
+#wrap .header .navbar .container-fluid .form-group .btn{font-size:20px;color:#646464;}
+#wrap .header .navbar .container-fluid .form-group .real_search{
+	display:none;
+	background:#397dd8;
+	color:#fff;
+}
+#wrap .header .navbar .container-fluid .form-group .form-control{
+	display:none;
+	position:absolute;
+	top:60px;
+	right:0;
+	width:200px;
+	background:#ddd;
+	color:#397dd8;
+	border:3px solid #fff;
+	z-index:9999;
+}
+/* placeholder color */
+.form-group input::-webkit-input-placeholder{color:#397dd8;}/* WebKit, Blink, Edge */
+.form-group input:-moz-placeholder{color:#397dd8;opacity:1;}/* Mozilla Firefox 4 to 18 */
+.form-group input::-moz-placeholder{color:#397dd8;opacity:1;}/* Mozilla Firefox 19+ */
+.form-group input:-ms-input-placeholder{color:#397dd8;}/* Internet Explorer 10-11 */
+#wrap .header .navbar .container-fluid .navbar-collapse .nav > li >a:focus,
+#wrap .header .navbar .container-fluid .navbar-collapse .nav > li >a:hover {
+    text-decoration: none;
+    background:url("../images/bg_nav_on.png") no-repeat bottom center;
+	background-color:transparent;
+}
+#wrap .header .navbar .container-fluid .navbar-collapse .nav	.dropdown > a{
+	display:inline-block;
+	width:125px;
+	padding:20px 0;
+	text-align:center;
+	font-family:'Nanum Pen Script';
+	font-size:30px;
+}
+#wrap .header .navbar .container-fluid .navbar-collapse .nav .open > a,
+#wrap .header .navbar .container-fluid .navbar-collapse .nav .open > a:focus,
+#wrap .header .navbar .container-fluid .navbar-collapse .nav .open > a:hover{
+    background-color: transparent;
+    border-color: none;
+}
+#wrap .header .navbar .container-fluid .navbar-collapse .nav	.dropdown .dropdown-menu{
+	width:200px;
+	font-size:18px;
+}
+#wrap .header .navbar .container-fluid .navbar-collapse .nav	.dropdown .dropdown-menu > li{padding:0 15px;}
+#wrap .header .navbar .container-fluid .navbar-collapse .nav	.dropdown .dropdown-menu > li.divider{
+	width:80%;
+	margin:0 auto;
+	padding:0;
+	background:#a0acba;
+}
+#wrap .header .navbar .container-fluid .navbar-collapse .nav	.dropdown .dropdown-menu > li > a{
+	padding:10px 20px;
+	color:#a0acba;
+	font-weight:300;
+}
+#wrap .header .navbar .container-fluid .navbar-collapse .nav	.dropdown .dropdown-menu > li > a:focus,
+#wrap .header .navbar .container-fluid .navbar-collapse .nav	.dropdown .dropdown-menu > li > a:hover {
+    text-decoration:none;
+    background-color:transparent;
+	color:#3a99ed;
+}
+
+#wrap .header .navbar .container-fluid:after{content:"";display:block;clear:both;}
+
+#wrap .header{
+	position:relative;
+	max-width:1112px;
+	width:100%;
+	margin:0 auto;
+	padding:24px 0 10px;
+}
+#wrap .header .logo{
+	display:inline-block;
+	/* width:440px; */
+	/* padding-left:106px; */
+}
+#wrap .header .logo a{display:block;width:122px;}
+#wrap .header .nav{
+	float:left;
+	/* width:620px; */
+}
+#wrap .header:after{content:"";display:block;clear:both;}
+
+/*============container===========*/
+#wrap .container .content .main_desc{
+	width:100%;
+	padding-top:50px;
+	background:url(../images/bg_main_content0.jpg) no-repeat top;
+	color:#fff;
+	text-align:center;
+}
+#wrap .container .content .main_desc h2{
+	margin-bottom:20px;
+	padding-bottom:10px;
+	background:url(../images/bg_main_content_headline.jpg) no-repeat bottom;
+	font-size:34px;
+	font-weight:300;
+}
+#wrap .container .content .main_desc h2 span{font-weight:500;}
+#wrap .container .content .main_desc > p{padding-bottom:50px;font-weight:100;}
+
+#wrap .container .content .main_desc .illness_wrap{
+	float:none;
+	display:inline-table;
+	max-width:1166px;
+	background:#fff;
+}
+#wrap .container .content .main_desc .illness_wrap .illness_list{
+	padding:25px 25px 10px;
+	text-align:center;
+}
+#wrap .container .content .main_desc .illness_wrap .illness_list > li{
+	display:inline-block;
+	/* max-width:262px; */
+	width:100%;
+	margin-right:18px;
+}
+#wrap .container .content .main_desc .illness_wrap .illness_list > li.last{margin:0;}
+#wrap .container .content .main_desc .illness_wrap .illness_list > li .illness_list_title{
+	margin-bottom:15px;
+	padding:16px 0;
+	background:#a8c538;
+	border:1px solid #89a136;
+	border-radius:10px;
+	box-shadow:0px 3px 10px #aaa;
+}
+#wrap .container .content .main_desc .illness_wrap .illness_list > li .illness_list_title p{
+	color:#83953d;
+	font-family:'Nanum Pen Script';
+	font-size:27px;
+}
+#wrap .container .content .main_desc .illness_wrap .illness_list > li .illness_list_title p:first-child{
+	height:43px;
+	color:#99b333;
+	font-size:24px;
+}
+#wrap .container .content .main_desc .illness_wrap .illness_list > li .illness_list_title p img{
+	margin:0 10px 0 0;
+	vertical-align:middle;
+}
+#wrap .container .content .main_desc .illness_wrap .illness_list > li .illness_list_title p span{
+	position:relative;
+	display:inline-block;
+	font-family:'Noto Sans KR';
+	vertical-align:middle;
+}
+#wrap .container .content .main_desc .illness_wrap .illness_list > li .illness_list_title p span:after{
+	content:"정신질환";
+	color:#fff4d8;
+	position:absolute;
+	top:-3px;
+	left:-3px;
+	z-index:0;
+}
+#wrap .container .content .main_desc .illness_wrap .illness_list > li .illness_list_title p .txt_shadow2:after{content:"암질환"}
+#wrap .container .content .main_desc .illness_wrap .illness_list > li .illness_list_title p .txt_shadow3:after{content:"감염질환"}
+#wrap .container .content .main_desc .illness_wrap .illness_list > li .illness_list_title p .txt_shadow4:after{content:"면역질환"}
+
+#wrap .container .content .main_desc .illness_wrap .illness_list > li .sub_illness_list{
+	display:inline-block;
+	width:100%;
+	margin:0 0 25px 0;
+	padding:0 25px 5px;
+	border:1px solid #89a136;
+	border-radius:10px;
+	text-align:left;
+}
+#wrap .container .content .main_desc .illness_wrap .illness_list > li .sub_illness_list > a{
+	display:block;
+	padding:8px;
+	background:url(../images/bg_sub_content_bar.png) no-repeat bottom;
+	background-size:100% auto;
+	color:#5f6541;
+	font-family:'Nanum Pen Script';
+	font-size:32px;
+}
+#wrap .container .content .main_desc .illness_wrap .illness_list > li .sub_illness_list > a.last{background:none;}
+#wrap .container .content .main_desc .illness_wrap .illness_list:after{content:"";display:block;clear:both;}
+#wrap .container .content .main_desc .illness_wrap .sub_illness_list > li > a > img{margin-right:5px;}
+#wrap .container .content .main_desc .illness_wrap .sub_illness_list > li > a.last{background:none;}
+#wrap .container .content .main_desc .illness_wrap .sub_illness_list:after{content:"";display:block;clear:both;}
+
+#wrap .container .content .notice_wrap{
+	width:100%;
+	padding:145px 0 65px;
+	background:url(../images/bg_notice.jpg) no-repeat top;
+}
+#wrap .container .content .notice_wrap .notice_list{
+	/* width:1166px;
+	margin:0 auto; */
+	text-align:center;
+}
+#wrap .container .content .notice_wrap .notice_list > li{
+	display:inline-block;
+	/* width:30%; */
+	/* margin-right:4%; */
+	margin-bottom:5%;
+	text-align:center;
+}
+#wrap .container .content .notice_wrap .notice_list > li.last{margin:0;}
+#wrap .container .content .notice_wrap .notice_list > li > img{height:105px;}
+#wrap .container .content .notice_wrap .notice_list > li > dl dt{
+	padding-top:35px;
+	font-size:20px;
+	font-weight:600;
+}
+#wrap .container .content .notice_wrap .notice_list > li > dl dd{
+	padding:35px 0;
+	font-size:13px;
+}
+#wrap .container .content .notice_wrap .notice_list > li .btn_more{
+	display:block;
+	width:139px;
+	height:41px;
+	line-height:41px;
+	margin:0 auto;
+	color:#d99070;
+	border:2px solid #d99070;
+	font-family:'Nanum Pen Script';
+	font-size:30px;
+}
+
+#wrap .container{max-width:1352px;width:100%;background:url("../images/main/bg_body.png") repeat-y 0 0;}
+#wrap .container .main_visual{padding-bottom:23px;}
+#wrap .container .main_visual > img{max-width:100%;}
+
+/* sub page */
+#page {position:relative;margin:0 auto;padding:65px 0;max-width:940px;min-height:850px; }
+#page:before{display:block; content:"";}
+#page div.content { background-color: transparent ;}
+#page .col-lg-3 {width:250px}
+
+/* .panel-heading:hover h4 {background:#197cca;color:#FFF} */
+#page h2 {margin-top:0;margin-bottom:20px;color:#197cca;font-size:42px;font-family:"Nanum Pen Script",sans-serif;line-height:35px;letter-spacing:-2px} 
+#page h2:after {position: absolute;display: inline-block;top:15px;height: 5px; width:73%; background: url("../images/common/bg_sub_titleLine.png") no-repeat right 0;content: "";vertical-align: middle;background-size:100% auto;}
+
+/* lnb side menu accodion */ 
+.panel-group .panel-heading + .panel-collapse > .list-group, 
+.panel-group .panel-heading + .panel-collapse > .panel-body{border:none}
+#page #accordion01 .panel{border-radius:0px;box-shadow:0 0 0;border:none;background:transparent;}
+#page #accordion01 .panel-heading{height:68px;width:100%;background:url(../images/sub/bg_side_box.png) no-repeat 0 0;background-color:transparent;border-radius:0px;background-size:100% auto}
+#page #accordion01 .panel-default > .panel-heading + .panel-collapse > .panel-body{border:none}
+#page #accordion01 h4{color:#FFF;font-size:38px;font-family:"Nanum Pen Script",sans-serif;line-height:45px;} 
+#page #accordion01 h4:before{display:inline-block;content:"";height:42px;width:42px;vertical-align: middle;} 
+#page #accordion01 #headingOne01 h4:before{background:url(../images/sub/icon_side_box01.png)no-repeat 0 -2px} 
+#page #accordion01 #headingTwo01 h4:before{background:url(../images/sub/icon_side_box02.png)no-repeat 0 0} 
+#page #accordion01 #headingThree01 h4:before{background:url(../images/sub/icon_side_box03.png)no-repeat 0 0} 
+#page #accordion01 h4 a:hover, #page #accordion01 h4 a:focus{text-decoration:none } 
+#page #accordion01 h4 > a {color:#fff;letter-spacing: -3px;text-shadow: 1px 0 2px #5e5e5e;}
+#page #accordion01 .panel-body{margin-top:5px;padding:0}
+
+#page #accordion01 .panel-body .list-group{width:248px;border:1px solid #a8c538}
+#page #accordion01 .panel-body .list-group-item{margin:0 20px;padding:12px 0;border:none;background:url(../images/common/bg_dash.png) no-repeat 0 0;}
+#page #accordion01 .panel-body .list-group-item:first-child{background:none;}
+#page #accordion01 .panel-body .list-group-item a{font-size:18px;color:#606745;line-height:24px}
+
+#page #accordion01 .panel-body .list-group-item a.on:after,
+#page #accordion01 .panel-body .list-group-item a:focus:after,
+#page #accordion01 .panel-body .list-group-item a:hover:after{position:absolute;display:block; height: 12px;width:181px;background:url(../images/common/img_line_on.png) no-repeat left bottom;background-size:100% auto;content:"";text-decoration:none}
+#page #accordion01 .panel-body .list-group-item a:focus,
+#page #accordion01 .panel-body .list-group-item a:hover,
+#page #accordion1 .panel-heading  a:focus,
+#page #accordion1 .panel-heading  a:hover{text-decoration:none}
+#page #accordion1 .panel-default {background: #fff; border: none;box-shadow:0 0 0}
+#page #accordion1 .panel-heading.accordion-toggle.collapsed {background:#f0f0f0;color:#888888;font-size:12px;line-height:18px} 
+#page #accordion1 .panel-heading.accordion-toggle {background:#197cca;color:#FFF;} 
+#accordion1 .panel-heading.accordion-toggle:after {float: right; position: relative; font-family:'Glyphicons Halflings';bottom:26px; content:"\2212";color: #FFF;font-size: 15pt;}
+#accordion1 .panel-heading.accordion-toggle.collapsed:after {content:"\2b"; color:#c0c0c0;bottom: 23px; }
+#accordion1 .panel-heading{position:relative;border-radius:10px}
+#accordion1 .panel-heading  h4{font-size:18px;font-weight:400}
+#accordion1 .panel-heading  h4:before{display:inline-block;width:22px;height:23px;margin-right:5px;content:"";vertical-align:middle}
+#accordion1 .panel-heading h4 a {word-break: keep-all;}
+#accordion1 .panel-heading.accordion-toggle.collapsed h4:before{background:url(../images/common/icon_cntList_off.png) no-repeat 0 0;}
+#accordion1 .panel-heading.accordion-toggle  h4:before{background:url(../images/common/icon_cntList_on.png) no-repeat 0 0;}
+#accordion1.panel-group{color: #6d6d6d;font-size:14px;line-height:26px;}
+#accordion1.panel-group .panel-body{padding:30px 15px;color:#6d6d6d;font-size:14px;line-height:26px;font-weight:lighter;word-break: keep-all;}
+#accordion1.panel-group {padding:20px 15px;color:#6d6d6d;font-size:14px;line-height:26px;font-weight:lighter;word-break: keep-all;}
+
+#page .InfoPage #accordion1.panel-group{padding:20px 0}
+#page .InfoPage #accordion1 .panel-heading{padding:10px 5px;border-radius:0px}
+#page .InfoPage #accordion1 .panel-heading.accordion-toggle.collapsed, 
+#page .InfoPage #accordion1 .panel-heading.accordion-toggle{background:#FFF;color:#197cca; border-top: 1px solid #197cca;}
+#page .InfoPage #accordion1 .panel-heading.accordion-toggle h4:before,
+#page .InfoPage #accordion1 .panel-heading.accordion-toggle.collapsed h4:before{display:none}
+#page .InfoPage #accordion1 .panel-heading.accordion-toggle:after {float: right; position: relative; font-family:'Glyphicons Halflings';bottom: 23px; content:"\e014";color: #197cca;font-size:7pt;line-height: 31px;}
+#page .InfoPage #accordion1 .panel-heading.accordion-toggle.collapsed:after {content:"\2b"; color:#197cca }
+#page .InfoPage #accordion1 .panel-group .panel-body{padding:30px 5px; }
+
+/*===========footer==========*/
+#wrap .footer{
+	max-width:1352px;
+	width:100%;
+	margin:0 auto;
+	padding:35px 0 0;
+	background:url(../images/bg_footer.png) no-repeat top;
+	background-size:auto 100%;
+	font-weight:300;
+}
+#wrap .footer .footer_wrap{
+	/* max-width:1060px; */
+	width:100%;
+	padding:0 10%;
+}
+#wrap .footer .footer_wrap > div{display:inline-block;}
+#wrap .footer .footer_wrap .copy{color:#92bed6;}
+#wrap .footer .footer_wrap .sns_area{text-align:center;}
+#wrap .footer .footer_wrap .sns_area a{
+	display:inline-block;
+	margin-right:15px;
+}
+#wrap .footer .footer_wrap .sns_area .btn_google{margin:0;}
+#wrap .footer .footer_wrap .info_area{}
+#wrap .footer .footer_wrap .info_area a{
+	display:inline-block;
+	padding:0 13px;
+	background:url(../images/icon_blue_bar.jpg) no-repeat right;
+	color:#92bed6;
+	font-size:13px;
+}
+#wrap .footer .footer_wrap .info_area a:hover{color:#fff;text-decoration:underline;}
+#wrap .footer .footer_wrap .info_area a.last{background:none;}
+#wrap .footer .footer_wrap .global_copy{
+	width:100%;
+	margin-top:33px;
+	padding:10px 0 30px;
+	border-top:1px solid #5991b8;
+	color:#d6e5df;
+	font-size:12px;
+	text-align:center;
+}
+#wrap .footer:after{content:"";display:block;clear:both;}
+
+/*popup*/
+#wrap .bg_gray{
+	display:none;
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	padding:100% 100%;
+	background:url("../images/common/bg_gray.png") repeat;
+}
+#wrap .pop_wrap{
+	display:none;
+	position:fixed;
+	top:15%;
+	left:50%;
+	margin-left:-272px;
+	width:485px;
+}
+#wrap .pop_wrap .pop_head{
+	margin-bottom:2px;
+	padding:0 5%;
+	background:#1d6eb7;
+	border:3px solid #104e78;
+	color:#fff;
+	font-family:'Nanum Pen Script';
+	font-size:50px;
+	border-radius:15px;
+}
+#wrap .pop_wrap .pop_head a{
+	display:block;
+	position:absolute;
+	top:23px;
+	right:5%;
+	width:29px;
+	height:29px;
+	background:url("../images/common/icon_close.png") no-repeat center center;
+}
+#wrap .pop_wrap .pop_desc{
+	padding:5%;
+	background:#fff;
+	border:3px solid #1d6eb7;
+	color:#928c8c;
+	font-weight:300;
+	font-size:14px;
+	border-radius:15px;
+}
+#wrap .pop_wrap .pop_desc .btn_pop_close{
+	display:block;
+	width:138px;
+	margin:40px auto 0;
+	line-height:38px;
+	border:2px solid #1d6eb7;
+	color:#1d6eb7;
+	font-family:'Nanum Pen Script';
+	font-size:30px;
+	text-align:center;
+}
+
+/* 통합메인 서브 메뉴 */
+.iCare4UView{color:#6d6d6d;font-weight:300}
+.iCare4UView h2:after{right:0}
+#page .iCare4UView h2{letter-spacing:0}
+.iCare4UView h4{margin-bottom:25px;font-size:24px;font-weight:300}
+.iCare4UView h4 span.blue{color:#2681cc;font-weight:500}
+.iCare4UView p{font-size:14px;line-height:24px;word-break:keep-all}
+.iCare4UView p img{max-width:100%}
+.iCare4UView strong{font-weight:600}
+.iCare4UView .detail_view_wrap {padding: 0 20px;}
+	
+/*통합메인 공지사항*/
+.iCare4UNotice h2:after{right:0;width:520px;background-size:100% auto;}
+#page .iCare4UNotice h2{letter-spacing:0;}
+#page .pull-right{background:#fff;}
+#page .pull-right .sub_head{color:#197cca;font-family:"Nanum Pen Script";font-size:42px;}
+#page .pull-right .select_area{padding:30px 0 20px;}
+#page .pull-right .select_area .select_form{float:left;width:40%;}
+#page .pull-right .select_area .select_form select{
+	max-width:175px;
+	width:70%;
+	height:auto;
+	padding:3px 0;
+	background:#e6e6e6;
+	color:#197cca;
+	border:0 none;
+	border-radius:0;
+	font-size:14px;
+	font-weight:700;
+}
+#page .pull-right .select_area .select_form .btn_go{
+	width:50px !important;
+	margin-left:5%;
+	line-height:28px;
+	background:#197cca;
+	color:#fff;
+	border:0 none;
+	font-family:"Nanum Pen Script";
+	font-size:24px;
+	text-align:center;
+	text-decoration:none;
+}
+#page .pull-right .select_area .paging_area{
+	float:right;
+	width:40%;
+	/* padding:5px 0; */
+	text-align:right;
+}
+#page .pull-right .select_area .paging_area .paging{
+	float:left;
+	color:#acacac;
+	font-family:"Nanum Pen Script";
+	font-size:26px;
+}
+#page .pull-right .select_area .paging_area .pagination{
+	float:right;
+	width:50%;
+	margin:0;
+	padding-top:7px;
+	border-radius:0;
+}
+#page .pull-right .select_area .paging_area .pagination li{display:inline-block;margin-right:20%;}
+#page .pull-right .select_area .paging_area .pagination li:last-child{margin:0;}
+#page .pull-right .select_area .paging_area .pagination li a{
+	padding:0;
+	background:none;
+	color:#acacac;
+	border:0 none;
+}
+#page .pull-right .table{table-layout:fixed;}
+#page .pull-right .table tbody tr td{
+	line-height:1.3em;
+	padding:20px 5px;
+	border-top:1px solid #e7e7e7;
+	font-size:20px;
+	font-weight:500;
+	text-align:center;
+	vertical-align:middle;
+}
+#page .pull-right .table tbody tr td.release_wrap{font-size:13px;text-align:right;}
+#page .pull-right .table tbody tr td a{
+	display:inline-block;
+	width:100%;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+}
+#page .pull-right .table tbody tr td span{color:#706f74;font-weight:300;}
+
+/* 사이트 맵 개인정보 취급방침  */
+
+.no-sidebars  #page{ background-color:#FFF}
+.no-sidebars .container {background: url("../images/main/bg_body.png") repeat-y 0 0; }
+.no-sidebars #container.container{border-top:1px solid #b4b4b4}
+.no-sidebars strong{font-weight:600}
+
+#page .siteMap{background:#FFF}
+#page .siteMap .col-lg-3{width:25%;}
+#page .siteMap h1,
+#page .privacy-policy h1,
+#page .legal-notices h1,
+#page .siteMap h2,
+#page .privacy-policy h2,
+#page .legal-notices h2,
+#page .siteMap h3,
+#page .privacy-policy h3, 
+#page .legal-notices h3 {margin:0;font-family: "Noto Sans KR",sans-serif;color:#197cca; font-weight: 400;} 
+
+#page .siteMap h1,
+#page .privacy-policy h1,
+#page .legal-notices h1{margin-bottom: 30px;padding-bottom: 45px;font-size:29px;text-align:center;}
+
+#page .privacy-policy h1,
+#page .legal-notices h1{border-bottom:1px solid #928c8c;}
+
+#page .siteMap h2:after{display:none}
+#page .siteMap h2{display: inline-table;padding:40px 0 0;margin-bottom:20px;font-size:24px;border-bottom:1px solid #999}
+#page .siteMap h3{font-size:16px}
+
+#page .siteMap .panel{background:none;border-radius:0px;box-shadow:0 0 0}
+#page .siteMap div.col-lg-3{margin:10px auto}
+#page .siteMap .panel-default{border:none;border-radius:0px}
+#page .siteMap .panel-heading {padding:25px 0 10px;background:none;color:#5b5b5b;font-size:24px;border-radius:0px;border-bottom:1px solid #999;font-weight: 400;}
+#page .siteMap .panel-body{padding:15px 0;}
+#page .siteMap .panel-body, 
+#page .siteMap .panel-body a{color:#4c4747}
+#page .siteMap dl{margin:10px auto;font-size:14px}
+#page .siteMap dl dt{font-weight:500}
+#page .siteMap dl dd{ line-height:24px;font-weight:300;word-break: keep-all;letter-spacing:-1px}
+
+#page .privacy-policy p,
+#page .privacy-policy table, 
+#page .legal-notices p,
+#page .legal-notices table{font-size:15px;color:#928c8c;font-weight:300;line-height:26px;word-break:keep-all}
+#page .privacy-policy h4,
+#page .legal-notices h4{margin:20px 0 10px;font-size:17px;color:#197cca} 
+#page .privacy-policy ul li, 
+#page .legal-notices ul li {color:#928c8c; list-style: outside;margin-left: 20px;}
+#page .privacy-policy table,
+#page .legal-notices table {border:1px solid #928c8c;font-size:13px }
+#page .privacy-policy table th,
+#page .legal-notices table th{padding:10px 5px;font-size:15px;font-weight:300;color:#555;border-bottom:1px solid #928c8c;text-align:center}
+#page .privacy-policy table td,
+#page .legal-notices table td {padding:5px 10px;border-top:1px solid #928c8c;}
+
+/*통합메인 유용한 제도*/
+.iCare4UUseful h2:after{right:0;}
+#page .iCare4UUseful .useful_wrap img{display:inline-block;height:auto;margin:20px auto;}
+#page .iCare4UUseful h3{margin-bottom:20px;color:#197cca;font-size:20px;}
+#page .iCare4UUseful h4{margin-bottom:20px;font-size:16px;}
+#page .iCare4UUseful h5{margin-bottom:20px;color:#197cca;font-size:14px;}
+#page .iCare4UUseful p{margin-bottom:20px;word-break:keep-all;letter-spacing:-0.5px;}
+
+/*부트스트랩*/
+@media all and (max-width:992px){
+	#wrap .container {
+		margin:0 auto;
+		padding:0;
+	}
+	#wrap .container .content .main_desc .illness_wrap .illness_list > li{max-width:47.3%;}
+	#wrap .container .content .notice_wrap .notice_list > li{width:33.333%;}
+	
+	#page .pull-right .select_area .paging_area{width:50%;}
+	#page .pull-right .table tbody tr td{padding:10px 5px;font-size:16px;text-align:center;}
+	#page .pull-right .select_area .select_form .btn_go{margin-left:3%;}	
+
+	#page .content .col-sm-8.pull-right{width:63.667%}
+	#page .pull-right .panel-group .panel-body img {display: block;margin: 0 auto;max-width: 100%}	
+	#accordion1 .panel-heading h4 a {display: inline-table;width: 83%;} 
+	#accordion1 .panel-heading.accordion-toggle:after {position:absolute;right:10px;top:1em;line-height:0}
+	#accordion1.panel-group .panel-body{padding:15px }
+}
+@media all and (max-width:989px){
+	#page h2:after {width:68%;}
+
+	/*유용한제도*/
+	#page .iCare4UUseful .useful_wrap img{width:100%;}
+
+	/* 사이트맵 */
+	#page .siteMap .col-lg-3{width:50%;}
+}
+@media all and (min-width:768px){
+	#wrap .container {
+		margin:0 auto;
+		padding:0;
+	}
+	#wrap .container .content .main_desc .illness_wrap .illness_list > li{max-width:47.3%;}	
+	#wrap .container .content .notice_wrap .notice_list > li{width:33.333%;}
+	#wrap .footer .footer_wrap .copy {
+		text-align:center;
+		letter-spacing:-0.5px;
+	}
+	#wrap .footer .footer_wrap .sns_area {
+		padding:20px 0;
+		text-align: center;
+	}
+	#wrap .footer .footer_wrap .info_area{
+		text-align:center;
+	}
+}
+@media all and (max-width:767px){
+	.web{display:none;}
+	.mobile{display:block;}
+	.navbar-toggle {
+		float: none;
+		margin-top:4%;
+	}
+	.navbar-toggle .icon-bar {background:#767676;}
+	#wrap .header .navbar{position:static;}
+	.navbar-collapse{
+		position:absolute;
+		top:0;
+		left:0;
+		width:100%;
+		background:rgba(1, 60, 116, 0.95);
+		z-index:9999;
+	}
+	.collapse > .mobile{
+		display:inline-block;
+		margin:30px 0 0 5%;
+		color:#fff;
+		font-size:25px;
+	}
+	#wrap .header .navbar-collapse.collapsing{display:none;transition-duration: 0s;}	
+
+	#wrap .header {
+		width: 100%;
+		padding: 20px 0;
+	}
+	#wrap .header .logo{
+		display:inline-block;
+		position:absolute;
+		top:0;
+		left:50%;
+		margin-top:5%;
+		margin-left:-61px;
+		text-align:center;
+	}
+	#wrap .header .logo img{display:inline-block;}
+	#wrap .header .nav{
+		float:none;
+		margin:0;
+		padding:30px 0 1000%;
+	}
+	#wrap .header .navbar .container-fluid > .navbar-collapse {
+		float: none;
+		padding-right: 0;
+	}
+	#wrap .header .navbar .container-fluid > .navbar-header{
+		float:left;
+		width:90%;
+		margin:0;
+		padding:0;
+	}
+	#wrap .header .navbar .container-fluid .navbar-collapse .nav .dropdown{
+		float:none;
+		width:90%;
+		margin:2% auto;
+		background:#fff;
+	}
+	#wrap .header .navbar .container-fluid .navbar-collapse .nav .dropdown > a {
+		display: inline-block;
+		width: 100%;
+		padding: 20px 0;
+		color:#185997;
+		text-align: center;
+		font-family: 'Noto Sans KR';
+		font-size: 20px;
+	}
+	#wrap .header .navbar .container-fluid .navbar-collapse .nav > li >a:focus,
+	#wrap .header .navbar .container-fluid .navbar-collapse .nav > li >a:hover {
+		text-decoration: none;
+		background: none;
+		background-color: transparent;
+	}
+	#wrap .header .navbar .container-fluid .navbar-collapse .nav .dropdown .dropdown-menu{
+		width: 100%;
+		font-size: 18px;
+		text-align:center;
+	}
+	#wrap .header .navbar .container-fluid .navbar-collapse .nav .dropdown .dropdown-menu > li{
+		margin:2% 0;
+		background:#fff;
+	}
+	#wrap .header .navbar .container-fluid .navbar-form{
+		float:left  !important;
+		position:static;
+		width:10%;
+		margin:0;
+		padding:0;
+		text-align:center;
+	}
+	#wrap .header .navbar .container-fluid  .form-group{}
+	#wrap .header .navbar .container-fluid .form-group .btn{
+		padding:16px 12px;
+		font-size:200%;
+		color:#646464;
+	}
+	#wrap .header .navbar .container-fluid .form-group .real_search{
+		display:none;
+		background:#397dd8;
+		color:#fff;
+	}
+	#wrap .header .navbar .container-fluid .form-group .form-control{
+		display:none;
+		position:absolute;
+		top:15%;
+		right:inherit;
+		left:0;
+		width:90%;
+		height:80px;
+		background:#ddd;
+		color:#397dd8;
+		border:3px solid #fff;
+		z-index:9999;
+	}
+	#wrap .container {
+		margin:0;
+		padding:0;
+	}
+	#wrap .container .main_visual{padding-bottom: 0;}
+	#wrap .container .content{margin-top:-2%;}
+	
+	#wrap .container .content .main_desc{width:100%;padding:7% 0 0;}
+	#wrap .container .content .main_desc h2 {
+		margin-bottom: 20px;
+		padding:0 5% 10px;
+		background: none;
+		font-size: 24px;
+		font-weight: 300;
+		text-align:left;
+	}
+	#wrap .container .content .main_desc > p {
+		line-height:1.6em;
+		padding:0 5% 7%;
+		font-size:12px;
+		font-weight: 100;
+		text-align:left;
+		letter-spacing:-1px;
+	}
+	#wrap .container .content .main_desc .illness_wrap {background: #fffce4;}
+	#wrap .container .content .main_desc .illness_wrap .illness_list {
+		padding: 25px 3% 10px;
+		text-align: center;
+	}
+	#wrap .container .content .main_desc .illness_wrap .illness_list > li{max-width:48%;margin-right:2%;}
+	#wrap .container .content .main_desc .illness_wrap .illness_list > li .illness_list_title p:first-child{height:25px;font-size:120%;}
+	#wrap .container .content .main_desc .illness_wrap .illness_list > li .illness_list_title p{font-size:120%;}
+	#wrap .container .content .main_desc .illness_wrap .illness_list > li .illness_list_title p img {width:20%;height:auto;}
+
+	#wrap .container .content .main_desc .illness_wrap .illness_list > li .sub_illness_list {
+		width: 100%;
+		margin: 0 0 25px 0;
+		padding: 0 3%;
+		border: 1px solid #89a136;
+		border-radius: 10px;
+		text-align: left;
+	}
+	#wrap .container .content .main_desc .illness_wrap .illness_list > li .sub_illness_list > a{font-size:139%;}
+	#wrap .container .content .main_desc .illness_wrap .illness_list > li .sub_illness_list > a img{width:25%;height:auto;margin-right:5%;}
+	
+	#wrap .container .content .notice_wrap{padding:20% 0 15%;}
+	#wrap .container .content .notice_wrap .notice_list > li {
+		display: inline-block;
+		margin-bottom: 10%;
+		background:url(../images/bg_m_notice_list.png) no-repeat center center;
+		background-size:90% auto;
+		text-align: center;
+	}
+	#wrap .container .content .notice_wrap .notice_list > li > dl dt {padding-top: 5%;}
+	#wrap .container .content .notice_wrap .notice_list > li > img {height: auto;}
+
+	
+	#wrap .footer .footer_wrap .copy {
+		text-align:center;
+		letter-spacing:-0.5px;
+	}
+	#wrap .footer .footer_wrap .sns_area {
+		padding:20px 0;
+		text-align: center;
+	}
+	#wrap .footer .footer_wrap .info_area{
+		text-align:center;
+		margin-bottom:5%;
+	}
+	/*popup*/
+	#wrap .pop_wrap{
+		top:0;
+		left:0;
+		margin-left:0;
+		width:100%;
+	}
+	#wrap .pop_wrap .pop_head{font-size:30px;}
+	#wrap .pop_wrap .pop_head a{top:10px;}
+	#wrap .pop_wrap .pop_desc{font-size:13px;}
+
+	#page {padding:0 18px}
+	#page .content .col-sm-8.pull-right{width:100%}	
+	#page h2{font-size:28px;padding:20px 0}
+	#page h2:after{top:35px;right:0;width:63%;background-size:100% auto;}	
+	#accordion1.panel-group{padding:0 0 30px;}
+	#accordion1.panel-group .panel-body{font-size:12px;line-height:21px;font-weight:normal}  
+	#page .InfoPage  #accordion1 .panel-heading{padding:10px 0}
+	#accordion1 .panel-heading h4{font-size:14px;line-height:21px}
+	#accordion1 .panel-heading.accordion-toggle:after{font-size:10pt;line-height:1em}  		
+	#page .pull-right .select_area .select_form{width:50%;}
+	#page .pull-right .select_area .select_form select{width:60%;}
+	#page .pull-right .select_area .paging_area .pagination{width:100%;}	
+
+	/* 통합메인 서브 메뉴 */
+	.iCare4UView p br, .iCare4UView h4 br{display:none} 
+	.iCare4UView h4{font-size:16px;line-height:21px}
+	.iCare4UView{ font-weight:normal;} 
+	.iCare4UView strong{font-weight:700} 
+	.iCare4UView .container{padding:0}
+
+	/*유용한제도*/
+	#page .iCare4UUseful .useful_wrap img{width:100%;}
+
+	/* 사이트맵 개인정보  */
+	.no-sidebars #container.container{padding-top:30px;border:none}
+	#page .siteMap .col-lg-3.col-sm-12{width:100%;}
+	#page .siteMap h1, #page .siteMap h2, #page .siteMap h3{font-weight:500}	
+	#page .siteMap h1, #page .privacy-policy h1, #page .legal-notices h1	{margin-bottom:25px;padding-bottom:25px;font-size:20px;}
+}
+
+@media all and (max-width:544px){
+	#wrap .header {width: 100%;padding:20px 0 10px;}
+	#wrap .header .navbar .container-fluid > .navbar-header {
+		float: left;
+		width: 85%;
+		margin: 0;
+		padding: 0;
+	}
+	#wrap .header .navbar .container-fluid .navbar-form {
+		margin:0;
+		text-align:right;
+	}
+	#wrap .header .navbar .container-fluid .form-group .btn {
+		height:70px;
+		line-height:70px;
+		padding:0;
+	}
+	#wrap .header .navbar .container-fluid .form-group .real_search {
+		padding:0 35%;
+	}
+	#wrap .header .navbar .container-fluid .form-group .form-control{
+		top: 17%;
+		width:84%;
+		height: 75px;
+	}
+}
+
+@media all and (min-width:1200px){
+	.container{max-width:1352px;width:100%;padding:0;box-sizing:border-box}
+	#wrap .container .content .main_desc .illness_wrap .illness_list > li{max-width:265px;}
+	#wrap .container .content .notice_wrap .notice_list > li{width:33.333%;}
+}

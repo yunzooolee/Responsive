@@ -1,0 +1,369 @@
+@charset "utf-8";
+
+/****************************** LAYOUT ******************************/
+#wrap{width:100%;}
+
+.uni_blue{color:#fff;}
+.bg_yellow{width:100%;background:#16b4ff;font-weight:700;font-size:0.8em;}
+.bg_uni_blue{width:100%;background:#0fbcff;}
+.italic{font-style:italic;}
+.gray{color:#a9a9a9;}
+.font_uni_blue{color:#16b4ff;}
+
+.bg_yellow.uni_blue{width:auto;}
+
+.pc{display:block !important;}
+.mobile{display:none !important;}
+
+/*#################################
+############## popup #############
+#################################*/
+.video_pop_wrap{display:none;position:fixed;top:0;left:0;width:100%;height:100%;padding-top:10%;z-index:1500;background:url(../images/bg_section_black.png) repeat;}
+.video_pop_wrap .btn_pop_video_close{display:block;position:absolute;top:5%;right:3%;width:2%;padding:10px;background:#0fbcff;}
+.video_pop_wrap .btn_pop_video_close img{width:100%;height:100%;}
+.video_pop_wrap .pop_video{position:relative;width:60%;margin:0 auto;padding-bottom:30%;text-align:center;}
+.video_pop_wrap .pop_video iframe,
+.video_pop_wrap .pop_video object,
+.video_pop_wrap .pop_video embed{position:absolute;top:0;left:0;width:100%;height:100%;}
+
+/* .video_area{position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden;}
+.video_area iframe,
+.video_area object,
+.video_area embed{position:absolute;top:0;left:0;width:80%;height:80%;} */
+
+/*#################################
+############## header #############
+#################################*/
+#wrap #header{width:100%;}
+#wrap #header .main_rolling{position:relative;background:#282828;}
+#wrap #header .main_rolling .video_slides li{overflow:hidden;}
+#wrap #header .main_rolling .video_slides li video{width:100%;}
+#wrap #header .main_rolling .video_slides li > img{width:100%;height:auto;display:none;}
+#wrap #header .main_rolling .video_slides li .bg_video{position:absolute;top:0;left:0;width:100%;height:100%;/* background:url(../images/bg_video.png) repeat; */}
+#wrap #header .main_rolling .video_slides li > div{position:absolute;bottom:20%;left:0;display:inline-block;color:#fff;padding-left:20%;}
+#wrap #header .main_rolling .video_slides li > div .desc_area{width:100%;text-align:left;}
+#wrap #header .main_rolling .video_slides li > div .desc_area .desc_head{width:auto;font-size:70px;/* text-align:center; */}
+#wrap #header .main_rolling .video_slides li > div .desc_area .desc_head p{float:left;padding:2%;}
+#wrap #header .main_rolling .video_slides li > div .desc_area .desc_txt{float:left;width:60%;margin:15px 0;padding:2%;background:url(../images/bg_uni_blue.png) repeat;text-align:left;font-size:18px;font-family:'Nanum Gothic';font-weight:normal;line-height:1.5em;}
+#wrap #header .main_rolling .video_slides li > div .desc_area .desc_txt strong{font-size:30px;}
+#wrap #header .main_rolling .video_slides li > div .desc_area .desc_txt p{padding-top:3%;}
+#wrap #header .main_rolling .video_slides li > div .desc_area .btn_more{display:inline-block;float:left;font-size:20px;color:#fff;clear:both;margin-top:15px;}
+
+#wrap #header .main_rolling .pager_area{width:100%;/* margin-top:-5px; */background:#282828;text-align:center;font-size:20px;}
+#wrap #header .main_rolling .pager_area .video_pager{width:64%;max-width:1200px;margin:0 auto;background:#282828;}
+#wrap #header .main_rolling .pager_area .video_pager > a{float:left;display:block;width:16.5%;padding:3% 0;background:#282828;color:#fff;font-weight:300;}
+#wrap #header .main_rolling .pager_area .video_pager > a:first-child{background:#282828;}
+#wrap #header .main_rolling .pager_area .video_pager > a.active{background:#17b4ff;color:#282828;}
+#wrap #header .main_rolling .pager_area .video_pager > a strong{font-weight:800;}
+
+/*rolling_txt 1*/
+#wrap #header .main_rolling .video_slides li div.video1 .desc_area .desc_head p:first-child{width:64%;}
+
+/*rolling_txt 2*/
+#wrap #header .main_rolling .video_slides li div.video2{position:absolute;top:10%;left:0;display:block;color:#fff;}
+#wrap #header .main_rolling .video_slides li div.video2 .desc_area{text-align:left;}
+#wrap #header .main_rolling .video_slides li div.video2 .desc_area .desc_head p{float:left;/* padding:0.5%; */}
+#wrap #header .main_rolling .video_slides li div.video2 .desc_area .desc_head p:last-child{clear:both;}
+#wrap #header .main_rolling .video_slides li div.video2 .desc_area .desc_txt{float:left;width:60%;margin:15px 0;/* padding:0.7%; */background:url(../images/bg_uni_blue.png) repeat;text-align:left;font-size:18px;font-family:'Nanum Gothic';font-weight:normal;line-height:1.5em;}
+#wrap #header .main_rolling .video_slides li div.video2 .desc_area .desc_txt strong{font-size:30px;}
+#wrap #header .main_rolling .video_slides li div.video2 .desc_area .desc_txt p{padding-top:3%;}
+#wrap #header .main_rolling .video_slides li div.video2 .desc_area .btn_more{float:left;display:block;}
+
+/*메인롤링 0번*/
+#wrap #header .main_rolling .video_slides li.slide0 div.video1 .desc_area .desc_head p:first-child{width:66%;}
+
+/*공유*/
+#wrap #header .main_rolling .video_slides li div.video3{position:absolute;bottom:20%;left:inherit;right:20%;display:block;color:#fff;}
+#wrap #header .main_rolling .video_slides li div.video3 .desc_area{text-align:right;}
+#wrap #header .main_rolling .video_slides li div.video3 .desc_area .desc_head p{float:right;/* padding:0.5%; */}
+#wrap #header .main_rolling .video_slides li div.video3 .desc_area .desc_head p:last-child{clear:both;}
+#wrap #header .main_rolling .video_slides li div.video3 .desc_area .desc_txt{float:right;width:64%;margin:15px 0;/* padding:0.7%; */background:url(../images/bg_uni_blue.png) repeat;text-align:right;font-size:18px;font-family:'Nanum Gothic';font-weight:normal;line-height:1.5em;}
+#wrap #header .main_rolling .video_slides li div.video3 .desc_area .desc_txt strong{font-size:30px;}
+#wrap #header .main_rolling .video_slides li div.video3 .desc_area .desc_txt p{padding-top:3%;}
+#wrap #header .main_rolling .video_slides li div.video3 .desc_area .btn_more{float:right;display:block;}
+
+/*김혜수*/
+#wrap #header .main_rolling .video_slides li.slide2 div.video2 .desc_area .desc_txt{width:54%;}
+
+/*올라브 국장*/
+#wrap #header .main_rolling .video_slides li.slide3 div.video2 .desc_area .desc_txt{width:66%;}
+
+/*아시아나*/
+#wrap #header .main_rolling .video_slides li.slide4 div.video1 .desc_area .desc_txt{width:38%;}
+
+/*자원봉사자*/
+#wrap #header .main_rolling .video_slides li.slide5 div.video2 .desc_area .desc_txt{width:55%;}
+
+/*#################################
+############# container #############
+#################################*/
+#wrap #container{width:60%;padding:6% 20%;max-width:1200px;}
+
+#wrap #container .video_tap_wrap .tab{position:relative;}
+#wrap #container .video_tap_wrap .tab > div{width:50%;height:100%;color:#000;}
+#wrap #container .video_tap_wrap .tab .left_box{padding-top:10px;}
+#wrap #container .video_tap_wrap .tab .left_box img{margin-left:1px;}
+
+#wrap #container .video_tap_wrap .tab .right_box{width:47%;margin-left:3%;}
+#wrap #container .video_tap_wrap .tab .right_box .desc_head,
+#wrap #container .video_tap_wrap .tab .right_box .desc_sub_head{font-size:30px;}
+#wrap #container .video_tap_wrap .tab .right_box .desc_head{padding-bottom:5px;}
+#wrap #container .video_tap_wrap .tab .right_box .desc_txt{padding:20px 0;font-size:18px;line-height:1.5em;}
+#wrap #container .video_tap_wrap .tab .right_box .desc_txt .icon_quotation01{padding-bottom:10px;}
+#wrap #container .video_tap_wrap .tab .right_box .desc_txt .icon_quotation02{padding-top:10px;font-size:14px;}
+#wrap #container .video_tap_wrap .tab .right_box .desc_txt img{display:inline;vertical-align:bottom;}
+#wrap #container .video_tap_wrap .tab .right_box .desc_etc{position:absolute;bottom:0;left:53%;font-size:16px;}
+#wrap #container .video_tap_wrap .tab .right_box .desc_etc p{padding-top:10px;}
+
+#wrap #container .video_tap_wrap .txt_box{width:100%;padding:10% 0;color:#000;text-align:center;}
+#wrap #container .video_tap_wrap .txt_box .txt_head{font-size:70px;}
+#wrap #container .video_tap_wrap .txt_box .txt_desc{padding-top:20px;font-size:23px;}
+#wrap #container .video_tap_wrap .txt_box .txt_desc:after{content:"";display:block;width:10%;height:10px;margin:40px auto 0;background:#000;}
+
+#wrap #container .video_tap_wrap .tab_person{padding:0 0 100px;}
+#wrap #container .video_tap_wrap .tab_person li{position:relative;float:left;width:25%;cursor:pointer;}
+#wrap #container .video_tap_wrap .tab_person li.bg_uni_blue{cursor:default;}
+#wrap #container .video_tap_wrap .tab_person li  img{width:100%;height:auto;vertical-align:top;}
+#wrap #container .video_tap_wrap .tab_person li .over_box{display:none;position:absolute;top:0;left:0;width:100%;height:100%;background:url(../images/bg_section_black.png) repeat;color:#fff;text-align:center;}
+#wrap #container .video_tap_wrap .tab_person li .over_box .desc_head{width:70%;margin:30% auto 20%;padding-bottom:10px;border-bottom:1px solid #fff;}
+
+#wrap #container .video_tap_wrap .event_area{width:100%;text-align:center;}
+#wrap #container .video_tap_wrap .event_area a,
+#wrap #container .video_tap_wrap .event_area a img{display:block;width:100%;height:auto;}
+
+/*#################################
+############## footer ##############
+#################################*/
+#wrap #footer{background:#f7f7f7;color:#333;text-align:center;/* font-weight:800; */}
+#wrap #footer ul li{width:auto;padding:15px;background:url(../images/icon_bar_bl.png) no-repeat right center;}
+#wrap #footer ul li.last{background:none !important;}
+
+#wrap #footer > div{padding:30px 0 45px;}
+#wrap #footer > div .info_area li,
+#wrap #footer > div .unicef_info li{display:inline-block;background:url(../images/icon_bar_w.png) no-repeat right center;}
+#wrap #footer > div .info_area li a{color:#333;}
+#wrap #footer > div .info_area li a:hover,
+#wrap #footer > div .info_area li a:active,
+#wrap #footer > div .info_area li a:focus{color:#000;}
+#wrap #footer > div .info_area li a:visited{color:#333;}
+#wrap #footer > div .copy{color:#999;}
+
+@media all and (max-width: 1600px) {
+	#wrap #header .main_rolling .pager_area{font-size:16px;}
+	/*김혜수*/
+	#wrap #header .main_rolling .video_slides li.slide2 div.video2 .desc_area .desc_txt{width:56%;}
+	/*올라브 국장*/
+	#wrap #header .main_rolling .video_slides li.slide3 div.video2 .desc_area .desc_txt{width:69%;}
+	/*아시아나*/
+	#wrap #header .main_rolling .video_slides li.slide4 div.video1 .desc_area .desc_txt{width:41%;}
+	/*자원봉사자*/
+	#wrap #header .main_rolling .video_slides li.slide5 div.video2 .desc_area .desc_txt{width:57%;}
+
+	#wrap #container .video_tap_wrap .tab .right_box .desc_head,
+	#wrap #container .video_tap_wrap .tab .right_box .desc_sub_head{font-size:25px;}
+	#wrap #container .video_tap_wrap .tab .right_box .desc_txt{font-size:16px;}
+	#wrap #container .video_tap_wrap .tab .right_box .desc_txt .icon_quotation02{font-size:12px;}
+	#wrap #container .video_tap_wrap .tab .right_box .desc_etc{font-size:14px;}
+}
+
+@media all and (max-width: 1400px) {
+	#wrap #header .main_rolling .video_slides li > div{padding-left:10%;}
+	#wrap #header .main_rolling .video_slides li div.video3{position:absolute;bottom:20%;left:inherit;right:10%;}
+	/*김혜수*/
+	#wrap #header .main_rolling .video_slides li.slide2 div.video2 .desc_area .desc_txt{width:59%;}
+	/*올라브 국장*/
+	#wrap #header .main_rolling .video_slides li.slide3 div.video2 .desc_area .desc_txt{width:71%;}
+	/*아시아나*/
+	#wrap #header .main_rolling .video_slides li.slide4 div.video1 .desc_area .desc_txt{width:44%;}
+	/*자원봉사자*/
+	#wrap #header .main_rolling .video_slides li.slide5 div.video2 .desc_area .desc_txt{width:60%;}
+
+	#wrap #header .main_rolling .pager_area{font-size:18px;}
+
+	#wrap #container .video_tap_wrap .tab .right_box .desc_head,
+	#wrap #container .video_tap_wrap .tab .right_box .desc_sub_head{font-size:22px;}
+	#wrap #container .video_tap_wrap .tab .right_box .desc_txt{padding:15px 0;font-size:14px;}
+	#wrap #container .video_tap_wrap .tab .right_box .desc_txt .icon_quotation02{font-size:10px;}
+	#wrap #container .video_tap_wrap .tab .right_box .desc_etc{font-size:12px;}
+	#wrap #container .video_tap_wrap .tab .right_box .desc_etc p{padding-top:5px;}
+}
+
+@media all and (min-width: 1281px) and (max-width:1399px) {
+	.bg_yellow{font-size:0.5em;}
+
+	#wrap #header .main_rolling .video_slides li > div{bottom:10%;padding-left:10%;}
+	#wrap #header .main_rolling .video_slides li > div .desc_area .desc_txt,
+	#wrap #header .main_rolling .video_slides li div.video2 .desc_area .desc_txt{font-size:14px;}
+	#wrap #header .main_rolling .video_slides li div.video3{bottom:10%;right:10%;}
+	#wrap #header .main_rolling .video_slides li div.video3 .desc_area .desc_txt{width:80%;margin:15px 0;font-size:14px;}
+	/*김혜수*/
+	#wrap #header .main_rolling .video_slides li.slide2 div.video2 .desc_area .desc_txt{width:70%;}
+	/*올라브 국장*/
+	#wrap #header .main_rolling .video_slides li.slide3 div.video2 .desc_area .desc_txt{width:86%;}
+	/*아시아나*/
+	#wrap #header .main_rolling .video_slides li.slide4 div.video1 .desc_area .desc_txt{width:51%;}
+	/*자원봉사자*/
+	#wrap #header .main_rolling .video_slides li.slide5 div.video2 .desc_area .desc_txt{width:71%;}
+	
+	#wrap #header .main_rolling .pager_area{font-size:14px;}
+
+	#wrap #container .video_tap_wrap .tab .right_box .desc_head,
+	#wrap #container .video_tap_wrap .tab .right_box .desc_sub_head{font-size:22px;}
+	#wrap #container .video_tap_wrap .tab .right_box .desc_txt{padding:10px 0;font-size:14px;}
+	#wrap #container .video_tap_wrap .tab .right_box .desc_txt .icon_quotation02{font-size:10px;}
+	#wrap #container .video_tap_wrap .tab .right_box .desc_etc{font-size:12px;}
+	#wrap #container .video_tap_wrap .tab .right_box .desc_etc p{padding-top:2px;}
+
+}
+@media all and (min-width: 1025px) and (max-width:1280px) {
+	.bg_yellow{font-size:0.5em;}
+
+	#wrap #header .main_rolling .video_slides li > div{bottom:10%;padding-left:10%;}
+	#wrap #header .main_rolling .video_slides li > div .desc_area .desc_txt,
+	#wrap #header .main_rolling .video_slides li div.video2 .desc_area .desc_txt{font-size:14px;}
+	#wrap #header .main_rolling .video_slides li div.video3{bottom:10%;right:10%;}
+	#wrap #header .main_rolling .video_slides li div.video3 .desc_area .desc_txt{width:80%;margin:15px 0;font-size:14px;}
+	/*김혜수*/
+	#wrap #header .main_rolling .video_slides li.slide2 div.video2 .desc_area .desc_txt{width:70%;}
+	/*올라브 국장*/
+	#wrap #header .main_rolling .video_slides li.slide3 div.video2 .desc_area .desc_txt{width:86%;}
+	/*아시아나*/
+	#wrap #header .main_rolling .video_slides li.slide4 div.video1 .desc_area .desc_txt{width:51%;}
+	/*자원봉사자*/
+	#wrap #header .main_rolling .video_slides li.slide5 div.video2 .desc_area .desc_txt{width:71%;}
+
+	#wrap #header .main_rolling .pager_area{font-size:14px;}
+	
+	#wrap #container .video_tap_wrap .tab .right_box .desc_head,
+	#wrap #container .video_tap_wrap .tab .right_box .desc_sub_head{font-size:22px;}
+	#wrap #container .video_tap_wrap .tab .right_box .desc_txt{padding:10px 0;font-size:14px;}
+	#wrap #container .video_tap_wrap .tab .right_box .desc_txt .icon_quotation01{padding:5px 0;}
+	#wrap #container .video_tap_wrap .tab .right_box .desc_txt .icon_quotation02{padding:5px 0;font-size:10px;}
+	#wrap #container .video_tap_wrap .tab .right_box .desc_txt .icon_quotation01 img,
+	#wrap #container .video_tap_wrap .tab .right_box .desc_txt .icon_quotation02 img{width:25px;height:auto;}
+	#wrap #container .video_tap_wrap .tab .right_box .desc_etc{font-size:12px;}
+	#wrap #container .video_tap_wrap .tab .right_box .desc_etc p{padding-top:2px;}
+}
+
+/*######################################################################################################
+###############################################	 모바일	################################################
+######################################################################################################*/
+
+@media all and (max-width: 1024px) {
+	#wrap{font-size:14px;}
+	.pc{display:none !important;}
+	.mobile{display:block !important;}
+	
+	/*###########################################
+	#################	popup	###################
+	###########################################*/
+	.video_pop_wrap{display:none;position:fixed;top:0;left:0;width:100%;height:100%;padding-top:20%;z-index:2001;background:url(../images/bg_section_black.png) repeat;}
+	.video_pop_wrap .btn_pop_video_close{display:block;position:absolute;top:5%;right:3%;width:2%;padding:10px;background:#0fbcff;}
+	.video_pop_wrap .btn_pop_video_close img{width:100%;height:100%;}
+	.video_pop_wrap .pop_video{position:relative;width:90%;margin:0 auto;padding-bottom:70%;text-align:center;}
+	.video_pop_wrap .pop_video iframe,
+	.video_pop_wrap .pop_video object,
+	.video_pop_wrap .pop_video embed{position:absolute;top:10%;left:0;width:100%;height:100%;}
+
+	/*###########################################
+	#################	header	###################
+	###########################################*/
+	#header .header{position:absolute;top:0;left:0;width:100%;height:30px;z-index:2000;}
+	#header .header .menu_area{height:30px;padding:5%;background:url(../images/m_bg_header0.png) repeat;}
+	#header .header .menu_area > div{position:relative;}
+	#header .header .menu_area a{display:block;}
+	#header .header .menu_area .logo,
+	#header .header .menu_area .m_btn{position:absolute;top:0;}
+	#header .header .menu_area .logo{left:0;}
+	#header .header .menu_area .logo img{width:60%;vertical-align:middle;}
+	#header .header .menu_area .m_btn{right:0;}
+	#header .header .menu_area .m_btn img{display:block;width:70%;margin:0 auto;}
+	#header .header .menu_area .btn_close{display:none;}
+	#header .header .menu_area .btn_close img{width:100%;}
+	#header .header .slide_list{display:none;padding:5% 0;background:url(../images/m_bg_header0.png) repeat;text-align:center;}
+	#header .header .slide_list a{display:block;margin-bottom:12%;color:#00aced;font-size:17px;}
+	#header .header .slide_list a:last-child{margin:5%;}
+
+	/*롤링*/
+	#wrap #header .main_rolling{position:static;background:none;}
+	#wrap #header .main_rolling .video_slides li .m_desc_area{position:static;display:block;padding:30px 15px;background:#ebebeb;color:#000;}
+	#wrap #header .main_rolling .video_slides li .m_desc_area .desc_head{line-height:1.5em;font-size:18px;font-weight:normal;}
+	#wrap #header .main_rolling .video_slides li .m_desc_area .desc_txt{padding:15px 0;}
+	#wrap #header .main_rolling .video_slides li .m_desc_area .desc_txt .txt{padding:15px 0;}
+	#wrap #header .main_rolling .video_slides li .m_desc_area .desc_txt .icon_quotation02 img{display:inline;vertical-align:middle;}
+	#wrap #header .main_rolling .video_slides li .m_desc_area .desc_txt .icon_quotation02 span{font-size:11px;}
+
+	/*###########################################
+	################	container	#################
+	###########################################*/
+	#wrap #container{width:100%;padding:0;max-width:inherit;}
+	#wrap #container .video_tap_wrap .txt_box{width:100%;padding:10% 0;color:#000;text-align:center;}
+	#wrap #container .video_tap_wrap .txt_box .txt_head{font-size:30px;}
+	#wrap #container .video_tap_wrap .txt_box .txt_head p:first-child{font-size:35px;}
+	#wrap #container .video_tap_wrap .txt_box .txt_desc{padding-top:20px;font-size:12px;}
+	#wrap #container .video_tap_wrap .txt_box .txt_desc:after{content:"";display:block;width:20%;height:5px;margin:20px auto 0;background:#000;}
+	
+	#wrap #container .video_tap_wrap .tab_person{padding:20px 0 0;}
+	#wrap #container .video_tap_wrap .tab_person li{width:50%;}
+	#wrap #container .video_tap_wrap .uni_child_logo{width:100%;padding:0% 0%;background:#16b4ff;}
+	#wrap #container .video_tap_wrap .uni_child_logo img{width:100%;}
+	
+	#wrap #container .video_tap_wrap .m_event_area{width:90%;padding:10% 5%;text-align:center;}
+	#wrap #container .video_tap_wrap .m_event_area img{width:100%;height:auto;}
+
+	/*###########################################
+	##################	footer	####################
+	###########################################*/
+	#wrap #footer{position:relative;font-size:13px;}
+	#wrap #footer .btn_top{position:absolute;bottom:0;right:0;text-align:right;}
+	#wrap #footer .btn_top img{width:50%;}
+	#wrap #footer ul li{padding:0 0 5px;;background:none;}
+	
+	#wrap #footer > div .info_area{display:none;}
+
+	#wrap #footer > div{padding:30px 0;}
+	#wrap #footer > div .unicef_info li{display:block;background:none;}
+}
+
+
+/*######################################################################################################
+###############################################	 테블릿	################################################
+######################################################################################################*/
+
+@media all and (min-width:768px)  and  (max-width:1024px){
+
+	/*###########################################
+	#################	header	###################
+	###########################################*/
+	#wrap #header .main_rolling .video_slides li .m_desc_area .desc_head{font-size:32px;}
+	#wrap #header .main_rolling .video_slides li .m_desc_area .desc_txt{padding:30px 0;}
+	#wrap #header .main_rolling .video_slides li .m_desc_area .desc_txt .txt{padding:30px 0;font-size:20px;}
+
+	#header .header .slide_list a{font-size:22px;}
+	
+	/*###########################################
+	################	container	#################
+	###########################################*/
+	#wrap #container .video_tap_wrap .txt_box .txt_head{font-size:50px;}
+	#wrap #container .video_tap_wrap .txt_box .txt_head p:first-child{font-size:60px;}
+	#wrap #container .video_tap_wrap .txt_box .txt_desc{padding-top:40px;font-size:20px;}
+	#wrap #container .video_tap_wrap .txt_box .txt_desc:after{content:"";display:block;width:20%;height:5px;margin:40px auto 0;background:#000;}
+
+	/*###########################################
+	##################	footer	####################
+	###########################################*/
+	#wrap #footer{font-size:18px;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

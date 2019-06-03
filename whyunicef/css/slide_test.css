@@ -1,0 +1,38 @@
+@charset "utf-8";
+
+/****************************** LAYOUT ******************************/
+#wrap{width:100%;}
+
+.uni_blue{color:#0fbcff;}
+.bg_yellow{background:#ecda19;font-family:'NanumBold';font-weight:700;}
+.bg_uni_blue{background:#0fbcff;}
+
+/*#################################
+############## header #############
+#################################*/
+#wrap #header{width:100%;}
+
+
+/*#################################
+############# container #############
+#################################*/
+
+
+
+/*#################################
+############## footer ##############
+#################################*/
+#wrap #footer{background:#8d8c8c;color:#fff;text-align:center;font-family:'NanumBold';}
+#wrap #footer ul li{width:auto;padding:15px;background:url(../images/icon_bar_bl.png) no-repeat right center;}
+#wrap #footer ul li.last{background:none !important;}
+
+#wrap #footer > div{padding:30px 0 45px;}
+#wrap #footer > div .info_area li,
+#wrap #footer > div .unicef_info li{display:inline-block;background:url(../images/icon_bar_w.png) no-repeat right center;}
+#wrap #footer > div .info_area li a{color:#fff;}
+#wrap #footer > div .info_area li a:hover,
+#wrap #footer > div .info_area li a:active,
+#wrap #footer > div .info_area li a:focus{color:#000;}
+#wrap #footer > div .info_area li a:visited{color:#fff;}
+#wrap #footer > div .copy{color:#f2f2f2;}
+
